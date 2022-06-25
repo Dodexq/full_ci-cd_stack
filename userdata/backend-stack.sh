@@ -38,10 +38,11 @@ memcached -p 11211 -U 11111 -u memcached -d
 sleep 30
 yum install socat -y
 yum install wget -y
-wget https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.10.5/rabbitmq-server-3.10.5-1.el8.noarch.rpm
+yum install erlang -y
+wget https://github.com/rabbitmq/rabbitmq-server/releases/download/rabbitmq_v3_6_10/rabbitmq-server-3.6.10-1.el7.noarch.rpm
 rpm --import https://www.rabbitmq.com/rabbitmq-release-signing-key.asc
 yum update
-rpm -Uvh rabbitmq-server-3.10.5-1.el8.noarch.rpm
+rpm -Uvh rabbitmq-server-3.6.10-1.el7.noarch.rpm
 systemctl start rabbitmq-server
 systemctl enable rabbitmq-server
 systemctl status rabbitmq-server
