@@ -2,18 +2,18 @@ pipeline {
 	agent any
 
     environment {
-        NEXUS_IP = '192.168.3.91'
+        NEXUS_IP = '192.168.56.91'
         NEXUS_PORT = '8081'
-        NEXUS_REPOSITORY = "vpro-release"
-        NEXUS_GROUP = "QA"
+        NEXUS_REPOSITORY = "class-repo"
+        NEXUS_GROUP = "HomeWork"
         FILE_PATH = 'target/vprofile-v2.war'
         ARTIFACT_ID = 'vprofile'
         VERSION = "${env.BUILD_TIMESTAMP}-${env.BUILD_ID}"
-        NEXUS_INSTANCE_ID = 'NexusRepoMgr'
+        NEXUS_INSTANCE_ID = 'vpro-maven-proxy'
         INVENTORY_PATH_STAGE = 'ansible/inventory-stage'
         INVENTORY_PATH_PROD = 'ansible/inventory-prod'
         ANSIBLE_CRED_ID = 'vagrant'
-        ANSIBLE_VAULT_CRED_ID = 'vault4nexus'
+        ANSIBLE_VAULT_CRED_ID = 'vault-nexus'
     }
 
     stages {
@@ -82,7 +82,7 @@ pipeline {
         stage('CODE ANALYSIS with SONARQUBE') {
 
 		  environment {
-             scannerHome = tool 'sonarqube4class'
+             scannerHome = tool 'sonarqube'
           }
 
           steps {
@@ -98,7 +98,7 @@ pipeline {
             }
 
             timeout(time: 10, unit: 'MINUTES') {
-               waitForQualityGate(webhookSecretId: 'wh4class', abortPipeline: true)
+               waitForQualityGate(webhookSecretId: 'SonarWH', abortPipeline: true)
             }
           }
         }
