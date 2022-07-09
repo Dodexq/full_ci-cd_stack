@@ -1,15 +1,13 @@
-# Prerequisites
-- JDK 1.8 or later
-- Maven 3 or later
-- MySQL 5.6 or later
+# Самостоятельная работа
+Реализация ci/cd конвейера, Инстументы: Jenkins + Nexus + SonarQube + Ansible + Vault
 
-# Technologies 
-- Spring MVC
-- Spring Security
-- Spring Data JPA
-- Maven
-- JSP
-- MySQL
+Автоматизация Компиляции из исходного кода, тестирования, развертывания артефакта на тестовый стенд, после финальной проверки SonarQube установка в прод.
 
-# Database
-MySQL 5.x
+## Виртуальные машины:
+- jenkins
+- nexus
+- sonarqube
+- backend
+- ctfrontend
+- cpfrontend
+
