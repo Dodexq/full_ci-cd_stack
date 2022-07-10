@@ -1,0 +1,44 @@
+- name: Provision a server
+  hosts: all
+  tasks:
+    - name: Install service on Debian
+      block:
+        - name: Install NTP
+          apt:
+            name: "{{item}}"
+            state: present
+          loop:
+            - ntp
+        - name: Start & enable NTP on Debian
+          service:
+            name: ntp
+            state: started
+            enabled: yes
+      when: ansible_os_family == "Debian"      
+      
+    - name: Install service on RedHat
+      block:
+        - name: Install NTP
+          yum:
+            name: "{{item}}"
+            state: present
+          loop: # Spisok
+            - ntp
+        - name: Start & enable NTP on RedHat
+          service:
+            name: ntpd
+            state: started
+            enabled: yes
+      when: ansible_os_family == "RedHat"
+
+    - name: Add group
+      group:
+        name: devops
+        state: present
+
+    - name: Create users
+      user:
+        name: "{{item}}"
+        state: present
+        groups: devops
+      loop: "{{usernames}}"

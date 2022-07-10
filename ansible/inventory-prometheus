@@ -1,0 +1,17 @@
+[websrvgrp]
+jenkins ansible_host=192.168.56.90 
+nexus ansible_host=192.168.56.91
+sonarqube ansible_host=192.168.56.92 
+backend ansible_host=192.168.56.93
+
+[frontend]
+ctfrontend ansible_host=192.168.56.95
+cpfrontend ansible_host=192.168.56.97
+
+[datacenter:children]
+websrvgrp
+frontend
+
+[datacenter:vars]
+ansible_user=vagrant 
+ansible_password=vagrant

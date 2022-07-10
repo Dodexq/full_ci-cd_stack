@@ -1,0 +1,277 @@
+2022-07-10 16:20:17,915 p=19228 u=vagrant |   [WARNING]: Unable to parse /vagrant/ansible/inventory as an inventory source
+
+2022-07-10 16:20:17,915 p=19228 u=vagrant |   [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2022-07-10 16:20:17,918 p=19228 u=vagrant |   [WARNING]: provided hosts list is empty, only localhost is available. Note
+that the implicit localhost does not match 'all'
+
+2022-07-10 16:20:53,687 p=19240 u=vagrant |  sonarqube | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2022-07-10 16:20:53,704 p=19240 u=vagrant |  jenkins | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2022-07-10 16:20:53,849 p=19240 u=vagrant |  cpfrontend | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2022-07-10 16:20:53,907 p=19240 u=vagrant |  ctfrontend | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2022-07-10 16:20:54,008 p=19240 u=vagrant |  nexus | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2022-07-10 16:20:54,257 p=19240 u=vagrant |  backend | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2022-07-10 16:28:21,692 p=19462 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-10 16:28:21,710 p=19462 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-10 16:28:22,890 p=19462 u=vagrant |  ok: [sonarqube]
+2022-07-10 16:28:23,155 p=19462 u=vagrant |  ok: [backend]
+2022-07-10 16:28:23,175 p=19462 u=vagrant |  ok: [ctfrontend]
+2022-07-10 16:28:23,183 p=19462 u=vagrant |  ok: [jenkins]
+2022-07-10 16:28:23,293 p=19462 u=vagrant |  ok: [nexus]
+2022-07-10 16:28:23,761 p=19462 u=vagrant |  ok: [cpfrontend]
+2022-07-10 16:28:23,772 p=19462 u=vagrant |  TASK [Install NTP] *************************************************************
+2022-07-10 16:28:23,884 p=19462 u=vagrant |  skipping: [nexus] => (item=ntp) 
+2022-07-10 16:28:23,945 p=19462 u=vagrant |  skipping: [backend] => (item=ntp) 
+2022-07-10 16:28:23,989 p=19462 u=vagrant |  skipping: [ctfrontend] => (item=ntp) 
+2022-07-10 16:28:24,006 p=19462 u=vagrant |  skipping: [cpfrontend] => (item=ntp) 
+2022-07-10 16:28:30,687 p=19462 u=vagrant |  changed: [jenkins] => (item=ntp)
+2022-07-10 16:28:53,319 p=19462 u=vagrant |  changed: [sonarqube] => (item=ntp)
+2022-07-10 16:28:53,329 p=19462 u=vagrant |  TASK [Start & enable NTP on Debian] ********************************************
+2022-07-10 16:28:53,390 p=19462 u=vagrant |  skipping: [nexus]
+2022-07-10 16:28:53,484 p=19462 u=vagrant |  skipping: [backend]
+2022-07-10 16:28:53,524 p=19462 u=vagrant |  skipping: [ctfrontend]
+2022-07-10 16:28:53,541 p=19462 u=vagrant |  skipping: [cpfrontend]
+2022-07-10 16:28:53,798 p=19462 u=vagrant |  ok: [jenkins]
+2022-07-10 16:28:53,814 p=19462 u=vagrant |  ok: [sonarqube]
+2022-07-10 16:28:53,825 p=19462 u=vagrant |  TASK [Install NTP] *************************************************************
+2022-07-10 16:28:53,849 p=19462 u=vagrant |  skipping: [jenkins] => (item=ntp) 
+2022-07-10 16:28:53,907 p=19462 u=vagrant |  skipping: [sonarqube] => (item=ntp) 
+2022-07-10 16:29:44,410 p=19462 u=vagrant |  changed: [ctfrontend] => (item=ntp)
+2022-07-10 16:29:52,616 p=19462 u=vagrant |  changed: [cpfrontend] => (item=ntp)
+2022-07-10 16:29:53,424 p=19462 u=vagrant |  changed: [backend] => (item=ntp)
+2022-07-10 16:29:54,798 p=19462 u=vagrant |  changed: [nexus] => (item=ntp)
+2022-07-10 16:29:54,811 p=19462 u=vagrant |  TASK [Start & enable NTP on RedHat] ********************************************
+2022-07-10 16:29:54,839 p=19462 u=vagrant |  skipping: [jenkins]
+2022-07-10 16:29:54,908 p=19462 u=vagrant |  skipping: [sonarqube]
+2022-07-10 16:29:55,567 p=19462 u=vagrant |  changed: [nexus]
+2022-07-10 16:29:55,666 p=19462 u=vagrant |  changed: [backend]
+2022-07-10 16:29:55,698 p=19462 u=vagrant |  changed: [ctfrontend]
+2022-07-10 16:29:55,710 p=19462 u=vagrant |  changed: [cpfrontend]
+2022-07-10 16:29:55,722 p=19462 u=vagrant |  TASK [Add group] ***************************************************************
+2022-07-10 16:29:56,700 p=19462 u=vagrant |  changed: [sonarqube]
+2022-07-10 16:29:56,741 p=19462 u=vagrant |  changed: [nexus]
+2022-07-10 16:29:56,748 p=19462 u=vagrant |  changed: [ctfrontend]
+2022-07-10 16:29:56,750 p=19462 u=vagrant |  changed: [backend]
+2022-07-10 16:29:56,853 p=19462 u=vagrant |  changed: [jenkins]
+2022-07-10 16:29:57,133 p=19462 u=vagrant |  changed: [cpfrontend]
+2022-07-10 16:29:57,147 p=19462 u=vagrant |  TASK [Create users] ************************************************************
+2022-07-10 16:29:57,195 p=19462 u=vagrant |  fatal: [jenkins]: FAILED! => {"msg": "'usernames' is undefined"}
+2022-07-10 16:29:57,220 p=19462 u=vagrant |  fatal: [nexus]: FAILED! => {"msg": "'usernames' is undefined"}
+2022-07-10 16:29:57,245 p=19462 u=vagrant |  fatal: [sonarqube]: FAILED! => {"msg": "'usernames' is undefined"}
+2022-07-10 16:29:57,272 p=19462 u=vagrant |  fatal: [backend]: FAILED! => {"msg": "'usernames' is undefined"}
+2022-07-10 16:29:57,277 p=19462 u=vagrant |  fatal: [ctfrontend]: FAILED! => {"msg": "'usernames' is undefined"}
+2022-07-10 16:29:57,282 p=19462 u=vagrant |  fatal: [cpfrontend]: FAILED! => {"msg": "'usernames' is undefined"}
+2022-07-10 16:29:57,287 p=19462 u=vagrant |  	to retry, use: --limit @/vagrant/ansible/nodeExporter.retry
+
+2022-07-10 16:29:57,287 p=19462 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-10 16:29:57,288 p=19462 u=vagrant |  backend                    : ok=4    changed=3    unreachable=0    failed=1   
+2022-07-10 16:29:57,288 p=19462 u=vagrant |  cpfrontend                 : ok=4    changed=3    unreachable=0    failed=1   
+2022-07-10 16:29:57,289 p=19462 u=vagrant |  ctfrontend                 : ok=4    changed=3    unreachable=0    failed=1   
+2022-07-10 16:29:57,289 p=19462 u=vagrant |  jenkins                    : ok=4    changed=2    unreachable=0    failed=1   
+2022-07-10 16:29:57,289 p=19462 u=vagrant |  nexus                      : ok=4    changed=3    unreachable=0    failed=1   
+2022-07-10 16:29:57,290 p=19462 u=vagrant |  sonarqube                  : ok=4    changed=2    unreachable=0    failed=1   
+2022-07-10 16:54:07,194 p=21847 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-10 16:54:07,214 p=21847 u=vagrant |  ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to have been in '/vagrant/ansible/group_vars/all': line 9, column 2, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+ ntp0: 0.ru.pool.ntp.org
+ ^ here
+
+2022-07-10 16:54:58,711 p=21871 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-10 16:54:58,721 p=21871 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-10 16:54:59,796 p=21871 u=vagrant |  ok: [sonarqube]
+2022-07-10 16:55:00,050 p=21871 u=vagrant |  ok: [cpfrontend]
+2022-07-10 16:55:00,116 p=21871 u=vagrant |  ok: [jenkins]
+2022-07-10 16:55:00,140 p=21871 u=vagrant |  ok: [ctfrontend]
+2022-07-10 16:55:00,163 p=21871 u=vagrant |  ok: [nexus]
+2022-07-10 16:55:00,560 p=21871 u=vagrant |  ok: [backend]
+2022-07-10 16:55:00,572 p=21871 u=vagrant |  TASK [Install NTP] *************************************************************
+2022-07-10 16:55:00,600 p=21871 u=vagrant |  skipping: [ctfrontend] => (item=ntp) 
+2022-07-10 16:55:00,655 p=21871 u=vagrant |  skipping: [cpfrontend] => (item=ntp) 
+2022-07-10 16:55:00,693 p=21871 u=vagrant |  skipping: [nexus] => (item=ntp) 
+2022-07-10 16:55:00,761 p=21871 u=vagrant |  skipping: [backend] => (item=ntp) 
+2022-07-10 16:55:01,568 p=21871 u=vagrant |  ok: [sonarqube] => (item=ntp)
+2022-07-10 16:55:01,697 p=21871 u=vagrant |  ok: [jenkins] => (item=ntp)
+2022-07-10 16:55:01,710 p=21871 u=vagrant |  TASK [Start & enable NTP on Debian] ********************************************
+2022-07-10 16:55:01,736 p=21871 u=vagrant |  skipping: [ctfrontend]
+2022-07-10 16:55:01,756 p=21871 u=vagrant |  skipping: [cpfrontend]
+2022-07-10 16:55:01,816 p=21871 u=vagrant |  skipping: [nexus]
+2022-07-10 16:55:01,890 p=21871 u=vagrant |  skipping: [backend]
+2022-07-10 16:55:02,211 p=21871 u=vagrant |  ok: [jenkins]
+2022-07-10 16:55:02,214 p=21871 u=vagrant |  ok: [sonarqube]
+2022-07-10 16:55:02,227 p=21871 u=vagrant |  TASK [Install NTP] *************************************************************
+2022-07-10 16:55:02,352 p=21871 u=vagrant |  skipping: [jenkins] => (item=ntp) 
+2022-07-10 16:55:02,469 p=21871 u=vagrant |  skipping: [sonarqube] => (item=ntp) 
+2022-07-10 16:55:03,194 p=21871 u=vagrant |  ok: [ctfrontend] => (item=ntp)
+2022-07-10 16:55:03,198 p=21871 u=vagrant |  ok: [cpfrontend] => (item=ntp)
+2022-07-10 16:55:03,221 p=21871 u=vagrant |  ok: [nexus] => (item=ntp)
+2022-07-10 16:55:03,225 p=21871 u=vagrant |  ok: [backend] => (item=ntp)
+2022-07-10 16:55:03,241 p=21871 u=vagrant |  TASK [Start & enable NTP on RedHat] ********************************************
+2022-07-10 16:55:03,452 p=21871 u=vagrant |  skipping: [jenkins]
+2022-07-10 16:55:03,590 p=21871 u=vagrant |  skipping: [sonarqube]
+2022-07-10 16:55:03,769 p=21871 u=vagrant |  ok: [ctfrontend]
+2022-07-10 16:55:03,850 p=21871 u=vagrant |  ok: [cpfrontend]
+2022-07-10 16:55:03,937 p=21871 u=vagrant |  ok: [nexus]
+2022-07-10 16:55:03,968 p=21871 u=vagrant |  ok: [backend]
+2022-07-10 16:55:03,981 p=21871 u=vagrant |  TASK [Add group] ***************************************************************
+2022-07-10 16:55:04,587 p=21871 u=vagrant |  ok: [sonarqube]
+2022-07-10 16:55:04,705 p=21871 u=vagrant |  ok: [cpfrontend]
+2022-07-10 16:55:04,706 p=21871 u=vagrant |  ok: [nexus]
+2022-07-10 16:55:04,708 p=21871 u=vagrant |  ok: [jenkins]
+2022-07-10 16:55:04,710 p=21871 u=vagrant |  ok: [ctfrontend]
+2022-07-10 16:55:04,917 p=21871 u=vagrant |  ok: [backend]
+2022-07-10 16:55:04,929 p=21871 u=vagrant |  TASK [Create users] ************************************************************
+2022-07-10 16:55:07,676 p=21871 u=vagrant |  changed: [sonarqube] => (item=user1)
+2022-07-10 16:55:07,685 p=21871 u=vagrant |  changed: [jenkins] => (item=user1)
+2022-07-10 16:55:07,686 p=21871 u=vagrant |  changed: [cpfrontend] => (item=user1)
+2022-07-10 16:55:07,692 p=21871 u=vagrant |  changed: [ctfrontend] => (item=user1)
+2022-07-10 16:55:07,693 p=21871 u=vagrant |  changed: [nexus] => (item=user1)
+2022-07-10 16:55:07,697 p=21871 u=vagrant |  changed: [sonarqube] => (item=user2)
+2022-07-10 16:55:07,701 p=21871 u=vagrant |  changed: [jenkins] => (item=user2)
+2022-07-10 16:55:07,702 p=21871 u=vagrant |  changed: [ctfrontend] => (item=user2)
+2022-07-10 16:55:07,702 p=21871 u=vagrant |  changed: [cpfrontend] => (item=user2)
+2022-07-10 16:55:07,709 p=21871 u=vagrant |  changed: [nexus] => (item=user2)
+2022-07-10 16:55:07,709 p=21871 u=vagrant |  changed: [sonarqube] => (item=user3)
+2022-07-10 16:55:07,710 p=21871 u=vagrant |  changed: [jenkins] => (item=user3)
+2022-07-10 16:55:07,717 p=21871 u=vagrant |  changed: [cpfrontend] => (item=user3)
+2022-07-10 16:55:07,718 p=21871 u=vagrant |  changed: [ctfrontend] => (item=user3)
+2022-07-10 16:55:07,718 p=21871 u=vagrant |  changed: [sonarqube] => (item=user4)
+2022-07-10 16:55:07,725 p=21871 u=vagrant |  changed: [nexus] => (item=user3)
+2022-07-10 16:55:07,726 p=21871 u=vagrant |  changed: [jenkins] => (item=user4)
+2022-07-10 16:55:07,733 p=21871 u=vagrant |  changed: [sonarqube] => (item=user5)
+2022-07-10 16:55:07,734 p=21871 u=vagrant |  changed: [cpfrontend] => (item=user4)
+2022-07-10 16:55:07,736 p=21871 u=vagrant |  changed: [nexus] => (item=user4)
+2022-07-10 16:55:07,753 p=21871 u=vagrant |  changed: [ctfrontend] => (item=user4)
+2022-07-10 16:55:07,761 p=21871 u=vagrant |  changed: [jenkins] => (item=user5)
+2022-07-10 16:55:07,763 p=21871 u=vagrant |  changed: [sonarqube] => (item=user6)
+2022-07-10 16:55:07,809 p=21871 u=vagrant |  changed: [cpfrontend] => (item=user5)
+2022-07-10 16:55:07,879 p=21871 u=vagrant |  changed: [nexus] => (item=user5)
+2022-07-10 16:55:07,883 p=21871 u=vagrant |  changed: [ctfrontend] => (item=user5)
+2022-07-10 16:55:07,913 p=21871 u=vagrant |  changed: [jenkins] => (item=user6)
+2022-07-10 16:55:08,260 p=21871 u=vagrant |  changed: [cpfrontend] => (item=user6)
+2022-07-10 16:55:08,290 p=21871 u=vagrant |  changed: [ctfrontend] => (item=user6)
+2022-07-10 16:55:08,295 p=21871 u=vagrant |  changed: [nexus] => (item=user6)
+2022-07-10 16:55:08,313 p=21871 u=vagrant |  changed: [backend] => (item=user1)
+2022-07-10 16:55:08,566 p=21871 u=vagrant |  changed: [backend] => (item=user2)
+2022-07-10 16:55:08,788 p=21871 u=vagrant |  changed: [backend] => (item=user3)
+2022-07-10 16:55:09,004 p=21871 u=vagrant |  changed: [backend] => (item=user4)
+2022-07-10 16:55:09,214 p=21871 u=vagrant |  changed: [backend] => (item=user5)
+2022-07-10 16:55:09,421 p=21871 u=vagrant |  changed: [backend] => (item=user6)
+2022-07-10 16:55:09,424 p=21871 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-10 16:55:09,425 p=21871 u=vagrant |  backend                    : ok=5    changed=1    unreachable=0    failed=0   
+2022-07-10 16:55:09,425 p=21871 u=vagrant |  cpfrontend                 : ok=5    changed=1    unreachable=0    failed=0   
+2022-07-10 16:55:09,425 p=21871 u=vagrant |  ctfrontend                 : ok=5    changed=1    unreachable=0    failed=0   
+2022-07-10 16:55:09,426 p=21871 u=vagrant |  jenkins                    : ok=5    changed=1    unreachable=0    failed=0   
+2022-07-10 16:55:09,426 p=21871 u=vagrant |  nexus                      : ok=5    changed=1    unreachable=0    failed=0   
+2022-07-10 16:55:09,426 p=21871 u=vagrant |  sonarqube                  : ok=5    changed=1    unreachable=0    failed=0   
+2022-07-10 16:55:13,253 p=23106 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-10 16:55:13,262 p=23106 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-10 16:55:14,375 p=23106 u=vagrant |  ok: [sonarqube]
+2022-07-10 16:55:14,460 p=23106 u=vagrant |  ok: [jenkins]
+2022-07-10 16:55:14,488 p=23106 u=vagrant |  ok: [ctfrontend]
+2022-07-10 16:55:14,500 p=23106 u=vagrant |  ok: [backend]
+2022-07-10 16:55:14,507 p=23106 u=vagrant |  ok: [nexus]
+2022-07-10 16:55:14,866 p=23106 u=vagrant |  ok: [cpfrontend]
+2022-07-10 16:55:14,876 p=23106 u=vagrant |  TASK [Install NTP] *************************************************************
+2022-07-10 16:55:14,979 p=23106 u=vagrant |  skipping: [nexus] => (item=ntp) 
+2022-07-10 16:55:15,032 p=23106 u=vagrant |  skipping: [backend] => (item=ntp) 
+2022-07-10 16:55:15,072 p=23106 u=vagrant |  skipping: [ctfrontend] => (item=ntp) 
+2022-07-10 16:55:15,089 p=23106 u=vagrant |  skipping: [cpfrontend] => (item=ntp) 
+2022-07-10 16:55:15,841 p=23106 u=vagrant |  ok: [sonarqube] => (item=ntp)
+2022-07-10 16:55:16,033 p=23106 u=vagrant |  ok: [jenkins] => (item=ntp)
+2022-07-10 16:55:16,045 p=23106 u=vagrant |  TASK [Start & enable NTP on Debian] ********************************************
+2022-07-10 16:55:16,109 p=23106 u=vagrant |  skipping: [nexus]
+2022-07-10 16:55:16,203 p=23106 u=vagrant |  skipping: [backend]
+2022-07-10 16:55:16,245 p=23106 u=vagrant |  skipping: [ctfrontend]
+2022-07-10 16:55:16,259 p=23106 u=vagrant |  skipping: [cpfrontend]
+2022-07-10 16:55:16,531 p=23106 u=vagrant |  ok: [jenkins]
+2022-07-10 16:55:16,534 p=23106 u=vagrant |  ok: [sonarqube]
+2022-07-10 16:55:16,547 p=23106 u=vagrant |  TASK [Install NTP] *************************************************************
+2022-07-10 16:55:16,575 p=23106 u=vagrant |  skipping: [jenkins] => (item=ntp) 
+2022-07-10 16:55:16,638 p=23106 u=vagrant |  skipping: [sonarqube] => (item=ntp) 
+2022-07-10 16:55:17,442 p=23106 u=vagrant |  ok: [ctfrontend] => (item=ntp)
+2022-07-10 16:55:17,527 p=23106 u=vagrant |  ok: [cpfrontend] => (item=ntp)
+2022-07-10 16:55:17,531 p=23106 u=vagrant |  ok: [nexus] => (item=ntp)
+2022-07-10 16:55:17,537 p=23106 u=vagrant |  ok: [backend] => (item=ntp)
+2022-07-10 16:55:17,551 p=23106 u=vagrant |  TASK [Start & enable NTP on RedHat] ********************************************
+2022-07-10 16:55:17,600 p=23106 u=vagrant |  skipping: [jenkins]
+2022-07-10 16:55:17,682 p=23106 u=vagrant |  skipping: [sonarqube]
+2022-07-10 16:55:18,017 p=23106 u=vagrant |  ok: [nexus]
+2022-07-10 16:55:18,114 p=23106 u=vagrant |  ok: [backend]
+2022-07-10 16:55:18,156 p=23106 u=vagrant |  ok: [ctfrontend]
+2022-07-10 16:55:18,196 p=23106 u=vagrant |  ok: [cpfrontend]
+2022-07-10 16:55:18,207 p=23106 u=vagrant |  TASK [Add group] ***************************************************************
+2022-07-10 16:55:18,862 p=23106 u=vagrant |  ok: [sonarqube]
+2022-07-10 16:55:18,929 p=23106 u=vagrant |  ok: [jenkins]
+2022-07-10 16:55:18,936 p=23106 u=vagrant |  ok: [ctfrontend]
+2022-07-10 16:55:18,938 p=23106 u=vagrant |  ok: [backend]
+2022-07-10 16:55:18,944 p=23106 u=vagrant |  ok: [nexus]
+2022-07-10 16:55:19,175 p=23106 u=vagrant |  ok: [cpfrontend]
+2022-07-10 16:55:19,186 p=23106 u=vagrant |  TASK [Create users] ************************************************************
+2022-07-10 16:55:21,677 p=23106 u=vagrant |  ok: [sonarqube] => (item=user1)
+2022-07-10 16:55:21,682 p=23106 u=vagrant |  ok: [backend] => (item=user1)
+2022-07-10 16:55:21,684 p=23106 u=vagrant |  ok: [ctfrontend] => (item=user1)
+2022-07-10 16:55:21,689 p=23106 u=vagrant |  ok: [jenkins] => (item=user1)
+2022-07-10 16:55:21,692 p=23106 u=vagrant |  ok: [nexus] => (item=user1)
+2022-07-10 16:55:21,715 p=23106 u=vagrant |  ok: [sonarqube] => (item=user2)
+2022-07-10 16:55:21,718 p=23106 u=vagrant |  ok: [backend] => (item=user2)
+2022-07-10 16:55:21,729 p=23106 u=vagrant |  ok: [ctfrontend] => (item=user2)
+2022-07-10 16:55:21,738 p=23106 u=vagrant |  ok: [nexus] => (item=user2)
+2022-07-10 16:55:21,743 p=23106 u=vagrant |  ok: [jenkins] => (item=user2)
+2022-07-10 16:55:21,753 p=23106 u=vagrant |  ok: [sonarqube] => (item=user3)
+2022-07-10 16:55:21,758 p=23106 u=vagrant |  ok: [backend] => (item=user3)
+2022-07-10 16:55:21,762 p=23106 u=vagrant |  ok: [sonarqube] => (item=user4)
+2022-07-10 16:55:21,770 p=23106 u=vagrant |  ok: [jenkins] => (item=user3)
+2022-07-10 16:55:21,773 p=23106 u=vagrant |  ok: [ctfrontend] => (item=user3)
+2022-07-10 16:55:21,781 p=23106 u=vagrant |  ok: [nexus] => (item=user3)
+2022-07-10 16:55:21,789 p=23106 u=vagrant |  ok: [sonarqube] => (item=user5)
+2022-07-10 16:55:21,800 p=23106 u=vagrant |  ok: [backend] => (item=user4)
+2022-07-10 16:55:21,809 p=23106 u=vagrant |  ok: [ctfrontend] => (item=user4)
+2022-07-10 16:55:21,811 p=23106 u=vagrant |  ok: [jenkins] => (item=user4)
+2022-07-10 16:55:21,814 p=23106 u=vagrant |  ok: [nexus] => (item=user4)
+2022-07-10 16:55:21,815 p=23106 u=vagrant |  ok: [sonarqube] => (item=user6)
+2022-07-10 16:55:21,909 p=23106 u=vagrant |  ok: [backend] => (item=user5)
+2022-07-10 16:55:21,959 p=23106 u=vagrant |  ok: [ctfrontend] => (item=user5)
+2022-07-10 16:55:21,994 p=23106 u=vagrant |  ok: [jenkins] => (item=user5)
+2022-07-10 16:55:22,019 p=23106 u=vagrant |  ok: [nexus] => (item=user5)
+2022-07-10 16:55:22,326 p=23106 u=vagrant |  ok: [cpfrontend] => (item=user1)
+2022-07-10 16:55:22,428 p=23106 u=vagrant |  ok: [backend] => (item=user6)
+2022-07-10 16:55:22,437 p=23106 u=vagrant |  ok: [ctfrontend] => (item=user6)
+2022-07-10 16:55:22,438 p=23106 u=vagrant |  ok: [jenkins] => (item=user6)
+2022-07-10 16:55:22,464 p=23106 u=vagrant |  ok: [nexus] => (item=user6)
+2022-07-10 16:55:22,602 p=23106 u=vagrant |  ok: [cpfrontend] => (item=user2)
+2022-07-10 16:55:22,796 p=23106 u=vagrant |  ok: [cpfrontend] => (item=user3)
+2022-07-10 16:55:22,972 p=23106 u=vagrant |  ok: [cpfrontend] => (item=user4)
+2022-07-10 16:55:23,148 p=23106 u=vagrant |  ok: [cpfrontend] => (item=user5)
+2022-07-10 16:55:23,328 p=23106 u=vagrant |  ok: [cpfrontend] => (item=user6)
+2022-07-10 16:55:23,332 p=23106 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-10 16:55:23,332 p=23106 u=vagrant |  backend                    : ok=5    changed=0    unreachable=0    failed=0   
+2022-07-10 16:55:23,333 p=23106 u=vagrant |  cpfrontend                 : ok=5    changed=0    unreachable=0    failed=0   
+2022-07-10 16:55:23,333 p=23106 u=vagrant |  ctfrontend                 : ok=5    changed=0    unreachable=0    failed=0   
+2022-07-10 16:55:23,333 p=23106 u=vagrant |  jenkins                    : ok=5    changed=0    unreachable=0    failed=0   
+2022-07-10 16:55:23,334 p=23106 u=vagrant |  nexus                      : ok=5    changed=0    unreachable=0    failed=0   
+2022-07-10 16:55:23,334 p=23106 u=vagrant |  sonarqube                  : ok=5    changed=0    unreachable=0    failed=0   
