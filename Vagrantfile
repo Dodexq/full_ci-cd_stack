@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
 	build.vm.provider "virtualbox" do |vb|
 		vb.memory = "2048"
 		vb.name = "dev_jenkins"
-		vb.cpus = "1"
+		vb.cpus = "4"
 	end
 	build.vm.provision "shell", path: "userdata/jenkins-setup.sh"
   end
@@ -33,9 +33,9 @@ Vagrant.configure("2") do |config|
     sq.vm.hostname = "sonarqube"
 	sq.vm.network "private_network", ip: "192.168.56.92"
 	sq.vm.provider "virtualbox" do |vb|
-		vb.memory = "4096"
+		vb.memory = "2048"
 		vb.name = "dev_sonarqube"
-		vb.cpus = "2"
+		vb.cpus = "1"
 	end
 	sq.vm.provision "shell", path: "userdata/sonar-setup.sh"
   end
