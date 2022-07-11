@@ -1,2 +1,2 @@
 .vagrant/
-./ansible/ansible.log
+ansible/ansible.log
