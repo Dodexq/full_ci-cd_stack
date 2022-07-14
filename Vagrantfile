@@ -45,7 +45,7 @@ Vagrant.configure("2") do |config|
     backend.vm.hostname = "vprobackend"
 	backend.vm.network "private_network", ip: "192.168.56.93"
 	backend.vm.provider "virtualbox" do |vb|
-		vb.memory = "1024"
+		vb.memory = "768"
 		vb.name = "dev_vprobackend"
 		vb.cpus = "1"
 	end
@@ -57,7 +57,7 @@ Vagrant.configure("2") do |config|
 	ctfrontend.vm.hostname = "ctfrontend"
     ctfrontend.vm.network "private_network", ip: "192.168.56.95"
 	ctfrontend.vm.provider "virtualbox" do |vb|
-     vb.memory = "1024"
+     vb.memory = "768"
 	 vb.cpus = "1"
      vb.name = "ctfrontend"
 	end
@@ -68,7 +68,7 @@ Vagrant.configure("2") do |config|
 	cpfrontend.vm.hostname = "cpfrontend"
     cpfrontend.vm.network "private_network", ip: "192.168.56.97"
 	cpfrontend.vm.provider "virtualbox" do |vb|
-     vb.memory = "1024"
+     vb.memory = "768"
 	 vb.cpus = "1"
      vb.name = "cpfrontend"
 	end
