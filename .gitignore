@@ -1,2 +1,4 @@
 .vagrant/
 ansible/ansible.log
+ansible/install_prometheus_2.37.retry
+ansible/nodeExporter.retry

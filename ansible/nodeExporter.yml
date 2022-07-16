@@ -3,22 +3,17 @@
   tasks:
     - name: Install service on Debian
       block:
-        - name: Install NTP
+        - name: Install tar
           apt:
             name: "{{item}}"
             state: present
           loop:
             - tar
-        - name: Start & enable NTP on Debian
-          service:
-            name: ntp
-            state: started
-            enabled: yes
       when: ansible_os_family == "Debian"      
       
     - name: Install service on RedHat
       block:
-        - name: Install NTP
+        - name: Install tar
           yum:
             name: "{{item}}"
             state: present
