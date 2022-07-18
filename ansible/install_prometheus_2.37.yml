@@ -68,7 +68,7 @@
     
     - name: Copy & Enable Services
       block:
-        - name: Copy node_exporter.service
+        - name: Copy prometheus.service
           copy:
             src: ../userdata/prometheus.service
             dest: /etc/systemd/system/prometheus.service
