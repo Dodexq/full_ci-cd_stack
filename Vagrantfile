@@ -15,6 +15,17 @@ Vagrant.configure("2") do |config|
 	build.vm.provision "shell", path: "userdata/jenkins-setup.sh"
   end
 
+  config.vm.define "elk_agent" do |build|
+	build.vm.box = "geerlingguy/ubuntu2004"
+    build.vm.hostname = "elk-agent"
+	build.vm.network "private_network", ip: "192.168.56.120"
+	build.vm.provider "virtualbox" do |vb|
+		vb.memory = "4096"
+		vb.name = "elk_agent"
+		vb.cpus = "4"
+	end
+  end
+
   config.vm.define "nexus" do |nexus|
     nexus.vm.box = "geerlingguy/centos7"
 	nexus.vm.hostname = "nexus"

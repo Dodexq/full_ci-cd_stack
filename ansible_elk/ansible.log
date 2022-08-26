@@ -1,0 +1,2046 @@
+2022-07-11 20:18:06,329 p=7369 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-11 20:18:06,339 p=7369 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-11 20:18:07,455 p=7369 u=vagrant |  ok: [sonarqube]
+2022-07-11 20:18:07,699 p=7369 u=vagrant |  ok: [jenkins]
+2022-07-11 20:18:07,719 p=7369 u=vagrant |  ok: [ctfrontend]
+2022-07-11 20:18:07,729 p=7369 u=vagrant |  ok: [cpfrontend]
+2022-07-11 20:18:08,032 p=7369 u=vagrant |  ok: [nexus]
+2022-07-11 20:18:08,183 p=7369 u=vagrant |  ok: [backend]
+2022-07-11 20:18:08,194 p=7369 u=vagrant |  TASK [Install NTP] *************************************************************
+2022-07-11 20:18:08,217 p=7369 u=vagrant |  skipping: [ctfrontend] => (item=tar) 
+2022-07-11 20:18:08,261 p=7369 u=vagrant |  skipping: [cpfrontend] => (item=tar) 
+2022-07-11 20:18:08,335 p=7369 u=vagrant |  skipping: [nexus] => (item=tar) 
+2022-07-11 20:18:08,360 p=7369 u=vagrant |  skipping: [backend] => (item=tar) 
+2022-07-11 20:18:09,091 p=7369 u=vagrant |  ok: [sonarqube] => (item=tar)
+2022-07-11 20:18:09,216 p=7369 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-11 20:18:09,228 p=7369 u=vagrant |  TASK [Start & enable NTP on Debian] ********************************************
+2022-07-11 20:18:09,252 p=7369 u=vagrant |  skipping: [ctfrontend]
+2022-07-11 20:18:09,270 p=7369 u=vagrant |  skipping: [cpfrontend]
+2022-07-11 20:18:09,326 p=7369 u=vagrant |  skipping: [nexus]
+2022-07-11 20:18:09,393 p=7369 u=vagrant |  skipping: [backend]
+2022-07-11 20:18:09,699 p=7369 u=vagrant |  ok: [sonarqube]
+2022-07-11 20:18:09,709 p=7369 u=vagrant |  ok: [jenkins]
+2022-07-11 20:18:09,721 p=7369 u=vagrant |  TASK [Install NTP] *************************************************************
+2022-07-11 20:18:09,839 p=7369 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-11 20:18:09,952 p=7369 u=vagrant |  skipping: [sonarqube] => (item=tar) 
+2022-07-11 20:18:10,579 p=7369 u=vagrant |  ok: [backend] => (item=tar)
+2022-07-11 20:18:10,591 p=7369 u=vagrant |  ok: [ctfrontend] => (item=tar)
+2022-07-11 20:18:10,612 p=7369 u=vagrant |  ok: [cpfrontend] => (item=tar)
+2022-07-11 20:18:10,679 p=7369 u=vagrant |  ok: [nexus] => (item=tar)
+2022-07-11 20:18:10,693 p=7369 u=vagrant |  TASK [Copy Node exporter bin] **************************************************
+2022-07-11 20:18:11,845 p=7369 u=vagrant |  ok: [jenkins]
+2022-07-11 20:18:11,846 p=7369 u=vagrant |  ok: [sonarqube]
+2022-07-11 20:18:11,880 p=7369 u=vagrant |  ok: [ctfrontend]
+2022-07-11 20:18:11,892 p=7369 u=vagrant |  ok: [nexus]
+2022-07-11 20:18:11,901 p=7369 u=vagrant |  ok: [cpfrontend]
+2022-07-11 20:18:12,287 p=7369 u=vagrant |  ok: [backend]
+2022-07-11 20:18:12,299 p=7369 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-11 20:18:12,711 p=7369 u=vagrant |  ok: [ctfrontend]
+2022-07-11 20:18:12,811 p=7369 u=vagrant |  ok: [cpfrontend]
+2022-07-11 20:18:12,843 p=7369 u=vagrant |  ok: [jenkins]
+2022-07-11 20:18:12,966 p=7369 u=vagrant |  ok: [nexus]
+2022-07-11 20:18:12,970 p=7369 u=vagrant |  ok: [sonarqube]
+2022-07-11 20:18:13,095 p=7369 u=vagrant |  ok: [backend]
+2022-07-11 20:18:13,107 p=7369 u=vagrant |  TASK [Extract bin] *************************************************************
+2022-07-11 20:18:16,571 p=7369 u=vagrant |  ok: [sonarqube]
+2022-07-11 20:18:16,677 p=7369 u=vagrant |  ok: [cpfrontend]
+2022-07-11 20:18:16,680 p=7369 u=vagrant |  ok: [ctfrontend]
+2022-07-11 20:18:16,680 p=7369 u=vagrant |  ok: [nexus]
+2022-07-11 20:18:16,795 p=7369 u=vagrant |  ok: [jenkins]
+2022-07-11 20:18:17,557 p=7369 u=vagrant |  ok: [backend]
+2022-07-11 20:18:17,566 p=7369 u=vagrant |  TASK [Copy Node exporter bin] **************************************************
+2022-07-11 20:18:18,302 p=7369 u=vagrant |  ok: [ctfrontend]
+2022-07-11 20:18:18,305 p=7369 u=vagrant |  ok: [cpfrontend]
+2022-07-11 20:18:18,329 p=7369 u=vagrant |  ok: [jenkins]
+2022-07-11 20:18:18,386 p=7369 u=vagrant |  ok: [sonarqube]
+2022-07-11 20:18:18,452 p=7369 u=vagrant |  ok: [nexus]
+2022-07-11 20:18:18,686 p=7369 u=vagrant |  ok: [backend]
+2022-07-11 20:18:18,696 p=7369 u=vagrant |  TASK [Change mod on bin] *******************************************************
+2022-07-11 20:18:19,069 p=7369 u=vagrant |  ok: [ctfrontend]
+2022-07-11 20:18:19,105 p=7369 u=vagrant |  ok: [cpfrontend]
+2022-07-11 20:18:19,153 p=7369 u=vagrant |  ok: [jenkins]
+2022-07-11 20:18:19,236 p=7369 u=vagrant |  ok: [nexus]
+2022-07-11 20:18:19,246 p=7369 u=vagrant |  ok: [sonarqube]
+2022-07-11 20:18:19,362 p=7369 u=vagrant |  ok: [backend]
+2022-07-11 20:18:19,370 p=7369 u=vagrant |  TASK [Copy node_exporter.service] **********************************************
+2022-07-11 20:18:19,959 p=7369 u=vagrant |  ok: [ctfrontend]
+2022-07-11 20:18:19,978 p=7369 u=vagrant |  ok: [cpfrontend]
+2022-07-11 20:18:20,004 p=7369 u=vagrant |  ok: [jenkins]
+2022-07-11 20:18:20,083 p=7369 u=vagrant |  ok: [sonarqube]
+2022-07-11 20:18:20,137 p=7369 u=vagrant |  ok: [nexus]
+2022-07-11 20:18:20,320 p=7369 u=vagrant |  ok: [backend]
+2022-07-11 20:18:20,329 p=7369 u=vagrant |  TASK [node_exporter Start&Enable] **********************************************
+2022-07-11 20:18:20,707 p=7369 u=vagrant |  ok: [ctfrontend]
+2022-07-11 20:18:20,804 p=7369 u=vagrant |  ok: [cpfrontend]
+2022-07-11 20:18:20,825 p=7369 u=vagrant |  changed: [jenkins]
+2022-07-11 20:18:20,927 p=7369 u=vagrant |  ok: [sonarqube]
+2022-07-11 20:18:20,948 p=7369 u=vagrant |  ok: [nexus]
+2022-07-11 20:18:21,049 p=7369 u=vagrant |  ok: [backend]
+2022-07-11 20:18:21,052 p=7369 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-11 20:18:21,052 p=7369 u=vagrant |  backend                    : ok=9    changed=0    unreachable=0    failed=0   
+2022-07-11 20:18:21,052 p=7369 u=vagrant |  cpfrontend                 : ok=9    changed=0    unreachable=0    failed=0   
+2022-07-11 20:18:21,052 p=7369 u=vagrant |  ctfrontend                 : ok=9    changed=0    unreachable=0    failed=0   
+2022-07-11 20:18:21,053 p=7369 u=vagrant |  jenkins                    : ok=10   changed=1    unreachable=0    failed=0   
+2022-07-11 20:18:21,053 p=7369 u=vagrant |  nexus                      : ok=9    changed=0    unreachable=0    failed=0   
+2022-07-11 20:18:21,053 p=7369 u=vagrant |  sonarqube                  : ok=10   changed=0    unreachable=0    failed=0   
+2022-07-14 20:55:51,155 p=2355 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-14 20:55:51,174 p=2355 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-14 20:55:52,083 p=2355 u=vagrant |  ok: [jenkins]
+2022-07-14 20:55:52,230 p=2355 u=vagrant |  ok: [sonarqube]
+2022-07-14 20:55:52,310 p=2355 u=vagrant |  ok: [backend]
+2022-07-14 20:55:52,317 p=2355 u=vagrant |  ok: [ctfrontend]
+2022-07-14 20:55:52,557 p=2355 u=vagrant |  ok: [nexus]
+2022-07-14 20:55:52,846 p=2355 u=vagrant |  ok: [cpfrontend]
+2022-07-14 20:55:52,856 p=2355 u=vagrant |  TASK [Install NTP] *************************************************************
+2022-07-14 20:55:52,881 p=2355 u=vagrant |  skipping: [nexus] => (item=tar) 
+2022-07-14 20:55:52,906 p=2355 u=vagrant |  skipping: [backend] => (item=tar) 
+2022-07-14 20:55:52,920 p=2355 u=vagrant |  skipping: [ctfrontend] => (item=tar) 
+2022-07-14 20:55:52,928 p=2355 u=vagrant |  skipping: [cpfrontend] => (item=tar) 
+2022-07-14 20:55:53,893 p=2355 u=vagrant |  ok: [sonarqube] => (item=tar)
+2022-07-14 20:55:53,901 p=2355 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-14 20:55:53,911 p=2355 u=vagrant |  TASK [Start & enable NTP on Debian] ********************************************
+2022-07-14 20:55:53,938 p=2355 u=vagrant |  skipping: [nexus]
+2022-07-14 20:55:53,965 p=2355 u=vagrant |  skipping: [backend]
+2022-07-14 20:55:53,979 p=2355 u=vagrant |  skipping: [ctfrontend]
+2022-07-14 20:55:53,988 p=2355 u=vagrant |  skipping: [cpfrontend]
+2022-07-14 20:55:54,217 p=2355 u=vagrant |  ok: [jenkins]
+2022-07-14 20:55:54,220 p=2355 u=vagrant |  ok: [sonarqube]
+2022-07-14 20:55:54,229 p=2355 u=vagrant |  TASK [Install NTP] *************************************************************
+2022-07-14 20:55:54,246 p=2355 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-14 20:55:54,271 p=2355 u=vagrant |  skipping: [sonarqube] => (item=tar) 
+2022-07-14 20:55:54,956 p=2355 u=vagrant |  ok: [backend] => (item=tar)
+2022-07-14 20:55:54,964 p=2355 u=vagrant |  ok: [ctfrontend] => (item=tar)
+2022-07-14 20:55:55,003 p=2355 u=vagrant |  ok: [cpfrontend] => (item=tar)
+2022-07-14 20:55:55,056 p=2355 u=vagrant |  ok: [nexus] => (item=tar)
+2022-07-14 20:55:55,066 p=2355 u=vagrant |  TASK [Copy Node exporter bin] **************************************************
+2022-07-14 20:55:55,841 p=2355 u=vagrant |  ok: [backend]
+2022-07-14 20:55:55,850 p=2355 u=vagrant |  ok: [ctfrontend]
+2022-07-14 20:55:55,892 p=2355 u=vagrant |  ok: [nexus]
+2022-07-14 20:55:56,057 p=2355 u=vagrant |  changed: [jenkins]
+2022-07-14 20:55:56,063 p=2355 u=vagrant |  changed: [sonarqube]
+2022-07-14 20:55:56,298 p=2355 u=vagrant |  ok: [cpfrontend]
+2022-07-14 20:55:56,307 p=2355 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-14 20:55:56,515 p=2355 u=vagrant |  changed: [jenkins]
+2022-07-14 20:55:56,562 p=2355 u=vagrant |  changed: [sonarqube]
+2022-07-14 20:55:56,630 p=2355 u=vagrant |  ok: [backend]
+2022-07-14 20:55:56,668 p=2355 u=vagrant |  ok: [ctfrontend]
+2022-07-14 20:55:56,668 p=2355 u=vagrant |  ok: [nexus]
+2022-07-14 20:55:56,798 p=2355 u=vagrant |  ok: [cpfrontend]
+2022-07-14 20:55:56,809 p=2355 u=vagrant |  TASK [Extract bin] *************************************************************
+2022-07-14 20:55:58,177 p=2355 u=vagrant |  ok: [nexus]
+2022-07-14 20:55:58,318 p=2355 u=vagrant |  ok: [backend]
+2022-07-14 20:55:58,355 p=2355 u=vagrant |  changed: [jenkins]
+2022-07-14 20:55:58,387 p=2355 u=vagrant |  changed: [sonarqube]
+2022-07-14 20:55:58,399 p=2355 u=vagrant |  ok: [ctfrontend]
+2022-07-14 20:55:59,388 p=2355 u=vagrant |  ok: [cpfrontend]
+2022-07-14 20:55:59,399 p=2355 u=vagrant |  TASK [Copy Node exporter bin] **************************************************
+2022-07-14 20:55:59,827 p=2355 u=vagrant |  ok: [jenkins]
+2022-07-14 20:56:00,042 p=2355 u=vagrant |  ok: [ctfrontend]
+2022-07-14 20:56:00,045 p=2355 u=vagrant |  ok: [sonarqube]
+2022-07-14 20:56:00,067 p=2355 u=vagrant |  ok: [nexus]
+2022-07-14 20:56:00,075 p=2355 u=vagrant |  ok: [backend]
+2022-07-14 20:56:00,344 p=2355 u=vagrant |  ok: [cpfrontend]
+2022-07-14 20:56:00,355 p=2355 u=vagrant |  TASK [Change mod on bin] *******************************************************
+2022-07-14 20:56:00,570 p=2355 u=vagrant |  ok: [jenkins]
+2022-07-14 20:56:00,605 p=2355 u=vagrant |  ok: [sonarqube]
+2022-07-14 20:56:00,698 p=2355 u=vagrant |  ok: [nexus]
+2022-07-14 20:56:00,708 p=2355 u=vagrant |  ok: [ctfrontend]
+2022-07-14 20:56:00,716 p=2355 u=vagrant |  ok: [backend]
+2022-07-14 20:56:00,825 p=2355 u=vagrant |  ok: [cpfrontend]
+2022-07-14 20:56:00,835 p=2355 u=vagrant |  TASK [Copy node_exporter.service] **********************************************
+2022-07-14 20:56:01,218 p=2355 u=vagrant |  ok: [jenkins]
+2022-07-14 20:56:01,250 p=2355 u=vagrant |  ok: [sonarqube]
+2022-07-14 20:56:01,330 p=2355 u=vagrant |  ok: [backend]
+2022-07-14 20:56:01,387 p=2355 u=vagrant |  ok: [nexus]
+2022-07-14 20:56:01,399 p=2355 u=vagrant |  ok: [ctfrontend]
+2022-07-14 20:56:01,597 p=2355 u=vagrant |  ok: [cpfrontend]
+2022-07-14 20:56:01,605 p=2355 u=vagrant |  TASK [node_exporter Start&Enable] **********************************************
+2022-07-14 20:56:01,822 p=2355 u=vagrant |  changed: [jenkins]
+2022-07-14 20:56:01,847 p=2355 u=vagrant |  ok: [sonarqube]
+2022-07-14 20:56:01,899 p=2355 u=vagrant |  ok: [nexus]
+2022-07-14 20:56:01,903 p=2355 u=vagrant |  ok: [backend]
+2022-07-14 20:56:01,938 p=2355 u=vagrant |  ok: [ctfrontend]
+2022-07-14 20:56:02,053 p=2355 u=vagrant |  ok: [cpfrontend]
+2022-07-14 20:56:02,055 p=2355 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-14 20:56:02,055 p=2355 u=vagrant |  backend                    : ok=9    changed=0    unreachable=0    failed=0   
+2022-07-14 20:56:02,055 p=2355 u=vagrant |  cpfrontend                 : ok=9    changed=0    unreachable=0    failed=0   
+2022-07-14 20:56:02,055 p=2355 u=vagrant |  ctfrontend                 : ok=9    changed=0    unreachable=0    failed=0   
+2022-07-14 20:56:02,056 p=2355 u=vagrant |  jenkins                    : ok=10   changed=4    unreachable=0    failed=0   
+2022-07-14 20:56:02,056 p=2355 u=vagrant |  nexus                      : ok=9    changed=0    unreachable=0    failed=0   
+2022-07-14 20:56:02,056 p=2355 u=vagrant |  sonarqube                  : ok=10   changed=3    unreachable=0    failed=0   
+2022-07-16 13:14:31,874 p=4225 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:14:31,895 p=4225 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:14:32,727 p=4225 u=vagrant |  ok: [jenkins]
+2022-07-16 13:14:32,736 p=4225 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:14:33,707 p=4225 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:14:33,716 p=4225 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:14:33,727 p=4225 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:14:33,736 p=4225 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:14:42,407 p=4225 u=vagrant |  changed: [jenkins]
+2022-07-16 13:14:42,417 p=4225 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:14:42,684 p=4225 u=vagrant |  changed: [jenkins]
+2022-07-16 13:14:42,696 p=4225 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:14:42,789 p=4225 u=vagrant |  fatal: [jenkins]: FAILED! => {"changed": false, "msg": "Could not find or access '/tmp/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-16 13:14:42,790 p=4225 u=vagrant |  	to retry, use: --limit @/vagrant/ansible/install_prometheus_2.37.retry
+
+2022-07-16 13:14:42,790 p=4225 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:14:42,791 p=4225 u=vagrant |  jenkins                    : ok=4    changed=2    unreachable=0    failed=1   
+2022-07-16 13:16:41,458 p=4516 u=vagrant |  ERROR! 'beckome' is not a valid attribute for a Play
+
+The error appears to have been in '/vagrant/ansible/install_prometheus_2.37.yml': line 1, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Provision a server
+  ^ here
+
+2022-07-16 13:17:03,802 p=4525 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:17:03,810 p=4525 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:17:04,477 p=4525 u=vagrant |  ok: [jenkins]
+2022-07-16 13:17:04,486 p=4525 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:17:05,319 p=4525 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:17:05,329 p=4525 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:17:05,341 p=4525 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:17:05,352 p=4525 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:17:15,479 p=4525 u=vagrant |  changed: [jenkins]
+2022-07-16 13:17:15,490 p=4525 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:17:15,759 p=4525 u=vagrant |  changed: [jenkins]
+2022-07-16 13:17:15,768 p=4525 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:17:15,853 p=4525 u=vagrant |  fatal: [jenkins]: FAILED! => {"changed": false, "msg": "Could not find or access '/tmp/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-16 13:17:15,855 p=4525 u=vagrant |  	to retry, use: --limit @/vagrant/ansible/install_prometheus_2.37.retry
+
+2022-07-16 13:17:15,855 p=4525 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:17:15,856 p=4525 u=vagrant |  jenkins                    : ok=4    changed=2    unreachable=0    failed=1   
+2022-07-16 13:17:45,267 p=4765 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:17:45,276 p=4765 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:17:45,829 p=4765 u=vagrant |  ok: [jenkins]
+2022-07-16 13:17:45,838 p=4765 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:17:46,695 p=4765 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:17:46,705 p=4765 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:17:46,717 p=4765 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:17:46,727 p=4765 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:17:55,131 p=4765 u=vagrant |  changed: [jenkins]
+2022-07-16 13:17:55,139 p=4765 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:17:55,394 p=4765 u=vagrant |  changed: [jenkins]
+2022-07-16 13:17:55,406 p=4765 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:17:55,483 p=4765 u=vagrant |  fatal: [jenkins]: FAILED! => {"changed": false, "msg": "Could not find or access '/tmp/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-16 13:17:55,484 p=4765 u=vagrant |  	to retry, use: --limit @/vagrant/ansible/install_prometheus_2.37.retry
+
+2022-07-16 13:17:55,485 p=4765 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:17:55,485 p=4765 u=vagrant |  jenkins                    : ok=4    changed=2    unreachable=0    failed=1   
+2022-07-16 13:18:06,625 p=4978 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:18:06,634 p=4978 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:18:07,178 p=4978 u=vagrant |  ok: [jenkins]
+2022-07-16 13:18:07,188 p=4978 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:18:08,046 p=4978 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:18:08,056 p=4978 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:18:08,070 p=4978 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:18:08,081 p=4978 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:18:16,697 p=4978 u=vagrant |  changed: [jenkins]
+2022-07-16 13:18:16,707 p=4978 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:18:16,972 p=4978 u=vagrant |  changed: [jenkins]
+2022-07-16 13:18:16,980 p=4978 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:18:25,015 p=4978 u=vagrant |  changed: [jenkins]
+2022-07-16 13:18:25,023 p=4978 u=vagrant |  TASK [Copy Prometheus /usr/bin] ****************************************************************************************
+2022-07-16 13:18:25,041 p=4978 u=vagrant |  fatal: [jenkins]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'item' is undefined\n\nThe error appears to have been in '/vagrant/ansible/install_prometheus_2.37.yml': line 44, column 11, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n        - name: Copy Prometheus /usr/bin\n          ^ here\n"}
+2022-07-16 13:18:25,042 p=4978 u=vagrant |  	to retry, use: --limit @/vagrant/ansible/install_prometheus_2.37.retry
+
+2022-07-16 13:18:25,042 p=4978 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:18:25,043 p=4978 u=vagrant |  jenkins                    : ok=5    changed=3    unreachable=0    failed=1   
+2022-07-16 13:20:43,703 p=5275 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:20:43,712 p=5275 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:20:44,397 p=5275 u=vagrant |  ok: [jenkins]
+2022-07-16 13:20:44,405 p=5275 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:20:45,283 p=5275 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:20:45,293 p=5275 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:20:45,306 p=5275 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:20:45,316 p=5275 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:20:45,660 p=5275 u=vagrant |  ok: [jenkins]
+2022-07-16 13:20:45,669 p=5275 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:20:45,910 p=5275 u=vagrant |  ok: [jenkins]
+2022-07-16 13:20:45,919 p=5275 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:20:52,541 p=5275 u=vagrant |  ok: [jenkins]
+2022-07-16 13:20:52,551 p=5275 u=vagrant |  TASK [Copy Prometheus /usr/bin] ****************************************************************************************
+2022-07-16 13:20:52,639 p=5275 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/tmp/prometheus/"prometheus"'
+2022-07-16 13:20:52,640 p=5275 u=vagrant |  failed: [jenkins] (item=prometheus) => {"changed": false, "item": "prometheus", "msg": "Could not find or access '/tmp/prometheus/\"prometheus\"'"}
+2022-07-16 13:20:52,663 p=5275 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/tmp/prometheus/"promtool"'
+2022-07-16 13:20:52,664 p=5275 u=vagrant |  failed: [jenkins] (item=promtool) => {"changed": false, "item": "promtool", "msg": "Could not find or access '/tmp/prometheus/\"promtool\"'"}
+2022-07-16 13:20:52,666 p=5275 u=vagrant |  	to retry, use: --limit @/vagrant/ansible/install_prometheus_2.37.retry
+
+2022-07-16 13:20:52,666 p=5275 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:20:52,666 p=5275 u=vagrant |  jenkins                    : ok=5    changed=0    unreachable=0    failed=1   
+2022-07-16 13:22:05,386 p=5614 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:22:05,396 p=5614 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:22:06,089 p=5614 u=vagrant |  ok: [jenkins]
+2022-07-16 13:22:06,099 p=5614 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:22:06,951 p=5614 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:22:06,961 p=5614 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:22:06,972 p=5614 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:22:06,983 p=5614 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:22:07,332 p=5614 u=vagrant |  ok: [jenkins]
+2022-07-16 13:22:07,341 p=5614 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:22:07,581 p=5614 u=vagrant |  ok: [jenkins]
+2022-07-16 13:22:07,590 p=5614 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:22:14,117 p=5614 u=vagrant |  ok: [jenkins]
+2022-07-16 13:22:14,126 p=5614 u=vagrant |  TASK [Copy Prometheus /usr/bin] ****************************************************************************************
+2022-07-16 13:22:14,210 p=5614 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/tmp/prometheus/prometheus-2.37.0.linux-amd64/"prometheus"'
+2022-07-16 13:22:14,211 p=5614 u=vagrant |  failed: [jenkins] (item=prometheus) => {"changed": false, "item": "prometheus", "msg": "Could not find or access '/tmp/prometheus/prometheus-2.37.0.linux-amd64/\"prometheus\"'"}
+2022-07-16 13:22:14,237 p=5614 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/tmp/prometheus/prometheus-2.37.0.linux-amd64/"promtool"'
+2022-07-16 13:22:14,238 p=5614 u=vagrant |  failed: [jenkins] (item=promtool) => {"changed": false, "item": "promtool", "msg": "Could not find or access '/tmp/prometheus/prometheus-2.37.0.linux-amd64/\"promtool\"'"}
+2022-07-16 13:22:14,240 p=5614 u=vagrant |  	to retry, use: --limit @/vagrant/ansible/install_prometheus_2.37.retry
+
+2022-07-16 13:22:14,240 p=5614 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:22:14,241 p=5614 u=vagrant |  jenkins                    : ok=5    changed=0    unreachable=0    failed=1   
+2022-07-16 13:23:11,234 p=5948 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:23:11,243 p=5948 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:23:11,771 p=5948 u=vagrant |  ok: [jenkins]
+2022-07-16 13:23:11,780 p=5948 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:23:12,627 p=5948 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:23:12,636 p=5948 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:23:12,648 p=5948 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:23:12,658 p=5948 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:23:13,026 p=5948 u=vagrant |  ok: [jenkins]
+2022-07-16 13:23:13,036 p=5948 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:23:13,287 p=5948 u=vagrant |  ok: [jenkins]
+2022-07-16 13:23:13,297 p=5948 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:23:19,770 p=5948 u=vagrant |  ok: [jenkins]
+2022-07-16 13:23:19,780 p=5948 u=vagrant |  TASK [Copy Prometheus /usr/bin] ****************************************************************************************
+2022-07-16 13:23:19,856 p=5948 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/tmp/prometheus/prometheus-2.37.0.linux-amd64/'prometheus''
+2022-07-16 13:23:19,857 p=5948 u=vagrant |  failed: [jenkins] (item=prometheus) => {"changed": false, "item": "prometheus", "msg": "Could not find or access '/tmp/prometheus/prometheus-2.37.0.linux-amd64/'prometheus''"}
+2022-07-16 13:23:19,883 p=5948 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/tmp/prometheus/prometheus-2.37.0.linux-amd64/'promtool''
+2022-07-16 13:23:19,884 p=5948 u=vagrant |  failed: [jenkins] (item=promtool) => {"changed": false, "item": "promtool", "msg": "Could not find or access '/tmp/prometheus/prometheus-2.37.0.linux-amd64/'promtool''"}
+2022-07-16 13:23:19,886 p=5948 u=vagrant |  	to retry, use: --limit @/vagrant/ansible/install_prometheus_2.37.retry
+
+2022-07-16 13:23:19,886 p=5948 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:23:19,886 p=5948 u=vagrant |  jenkins                    : ok=5    changed=0    unreachable=0    failed=1   
+2022-07-16 13:23:38,290 p=6245 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:23:38,299 p=6245 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:23:38,840 p=6245 u=vagrant |  ok: [jenkins]
+2022-07-16 13:23:38,849 p=6245 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:23:39,698 p=6245 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:23:39,709 p=6245 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:23:39,720 p=6245 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:23:39,732 p=6245 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:23:40,095 p=6245 u=vagrant |  ok: [jenkins]
+2022-07-16 13:23:40,104 p=6245 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:23:40,355 p=6245 u=vagrant |  ok: [jenkins]
+2022-07-16 13:23:40,365 p=6245 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:23:46,896 p=6245 u=vagrant |  ok: [jenkins]
+2022-07-16 13:23:46,905 p=6245 u=vagrant |  TASK [Copy Prometheus /usr/bin] ****************************************************************************************
+2022-07-16 13:23:51,283 p=6245 u=vagrant |  changed: [jenkins] => (item=prometheus)
+2022-07-16 13:23:55,125 p=6245 u=vagrant |  changed: [jenkins] => (item=promtool)
+2022-07-16 13:23:55,132 p=6245 u=vagrant |  TASK [Copy Prometheus Config from /vagrant/] ***************************************************************************
+2022-07-16 13:23:55,344 p=6245 u=vagrant |  changed: [jenkins]
+2022-07-16 13:23:55,351 p=6245 u=vagrant |  TASK [Copy console* directory] *****************************************************************************************
+2022-07-16 13:23:55,737 p=6245 u=vagrant |  ok: [jenkins] => (item=console_libraries)
+2022-07-16 13:23:55,759 p=6245 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/tmp/prometheus/prometheus-2.37.0.linux-amd64/console'
+2022-07-16 13:23:55,759 p=6245 u=vagrant |  failed: [jenkins] (item=console) => {"changed": false, "item": "console", "msg": "Could not find or access '/tmp/prometheus/prometheus-2.37.0.linux-amd64/console'"}
+2022-07-16 13:23:56,043 p=6245 u=vagrant |  changed: [jenkins] => (item=prometheus.yml)
+2022-07-16 13:23:56,044 p=6245 u=vagrant |  	to retry, use: --limit @/vagrant/ansible/install_prometheus_2.37.retry
+
+2022-07-16 13:23:56,045 p=6245 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:23:56,045 p=6245 u=vagrant |  jenkins                    : ok=7    changed=2    unreachable=0    failed=1   
+2022-07-16 13:26:55,303 p=6922 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:26:55,312 p=6922 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:26:56,004 p=6922 u=vagrant |  ok: [jenkins]
+2022-07-16 13:26:56,012 p=6922 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:26:56,843 p=6922 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:26:56,853 p=6922 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:26:56,864 p=6922 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:26:56,873 p=6922 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:26:57,223 p=6922 u=vagrant |  ok: [jenkins]
+2022-07-16 13:26:57,241 p=6922 u=vagrant |  TASK [stop service if needed] ******************************************************************************************
+2022-07-16 13:26:57,492 p=6922 u=vagrant |  fatal: [jenkins]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (systemd) module: ignore_errors Supported parameters include: daemon_reload, enabled, masked, name, no_block, state, user"}
+2022-07-16 13:26:57,493 p=6922 u=vagrant |  	to retry, use: --limit @/vagrant/ansible/install_prometheus_2.37.retry
+
+2022-07-16 13:26:57,494 p=6922 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:26:57,494 p=6922 u=vagrant |  jenkins                    : ok=3    changed=0    unreachable=0    failed=1   
+2022-07-16 13:27:23,102 p=7141 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:27:23,111 p=7141 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:27:23,645 p=7141 u=vagrant |  ok: [jenkins]
+2022-07-16 13:27:23,654 p=7141 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:27:24,521 p=7141 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:27:24,533 p=7141 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:27:24,545 p=7141 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:27:24,556 p=7141 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:27:24,923 p=7141 u=vagrant |  ok: [jenkins]
+2022-07-16 13:27:24,934 p=7141 u=vagrant |  TASK [stop service if needed] ******************************************************************************************
+2022-07-16 13:27:25,245 p=7141 u=vagrant |  changed: [jenkins]
+2022-07-16 13:27:25,255 p=7141 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:27:25,530 p=7141 u=vagrant |  ok: [jenkins]
+2022-07-16 13:27:25,540 p=7141 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:27:32,113 p=7141 u=vagrant |  ok: [jenkins]
+2022-07-16 13:27:32,125 p=7141 u=vagrant |  TASK [Copy Prometheus /usr/bin] ****************************************************************************************
+2022-07-16 13:27:32,715 p=7141 u=vagrant |  ok: [jenkins] => (item=prometheus)
+2022-07-16 13:27:33,144 p=7141 u=vagrant |  ok: [jenkins] => (item=promtool)
+2022-07-16 13:27:33,170 p=7141 u=vagrant |  TASK [Copy Prometheus Config from /vagrant/] ***************************************************************************
+2022-07-16 13:27:33,395 p=7141 u=vagrant |  ok: [jenkins]
+2022-07-16 13:27:33,403 p=7141 u=vagrant |  TASK [Copy console* directory] *****************************************************************************************
+2022-07-16 13:27:33,788 p=7141 u=vagrant |  ok: [jenkins] => (item=console_libraries)
+2022-07-16 13:27:33,812 p=7141 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/tmp/prometheus/prometheus-2.37.0.linux-amd64/console'
+2022-07-16 13:27:33,812 p=7141 u=vagrant |  failed: [jenkins] (item=console) => {"changed": false, "item": "console", "msg": "Could not find or access '/tmp/prometheus/prometheus-2.37.0.linux-amd64/console'"}
+2022-07-16 13:27:34,084 p=7141 u=vagrant |  ok: [jenkins] => (item=prometheus.yml)
+2022-07-16 13:27:34,086 p=7141 u=vagrant |  	to retry, use: --limit @/vagrant/ansible/install_prometheus_2.37.retry
+
+2022-07-16 13:27:34,086 p=7141 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:27:34,086 p=7141 u=vagrant |  jenkins                    : ok=8    changed=1    unreachable=0    failed=1   
+2022-07-16 13:28:00,224 p=7796 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:28:00,233 p=7796 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:28:00,794 p=7796 u=vagrant |  ok: [jenkins]
+2022-07-16 13:28:00,803 p=7796 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:28:01,614 p=7796 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:28:01,624 p=7796 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:28:01,635 p=7796 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:28:01,646 p=7796 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:28:02,006 p=7796 u=vagrant |  ok: [jenkins]
+2022-07-16 13:28:02,017 p=7796 u=vagrant |  TASK [stop service if needed] ******************************************************************************************
+2022-07-16 13:28:02,279 p=7796 u=vagrant |  ok: [jenkins]
+2022-07-16 13:28:02,289 p=7796 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:28:02,541 p=7796 u=vagrant |  ok: [jenkins]
+2022-07-16 13:28:02,551 p=7796 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:28:09,128 p=7796 u=vagrant |  ok: [jenkins]
+2022-07-16 13:28:09,137 p=7796 u=vagrant |  TASK [Copy Prometheus /usr/bin] ****************************************************************************************
+2022-07-16 13:28:09,692 p=7796 u=vagrant |  ok: [jenkins] => (item=prometheus)
+2022-07-16 13:28:10,172 p=7796 u=vagrant |  ok: [jenkins] => (item=promtool)
+2022-07-16 13:28:10,181 p=7796 u=vagrant |  TASK [Copy Prometheus Config from /vagrant/] ***************************************************************************
+2022-07-16 13:28:10,444 p=7796 u=vagrant |  ok: [jenkins]
+2022-07-16 13:28:10,451 p=7796 u=vagrant |  TASK [Copy console* directory] *****************************************************************************************
+2022-07-16 13:28:10,855 p=7796 u=vagrant |  ok: [jenkins] => (item=console_libraries)
+2022-07-16 13:28:12,187 p=7796 u=vagrant |  ok: [jenkins] => (item=consoles)
+2022-07-16 13:28:12,487 p=7796 u=vagrant |  ok: [jenkins] => (item=prometheus.yml)
+2022-07-16 13:28:12,496 p=7796 u=vagrant |  TASK [Copy node_exporter.service] **************************************************************************************
+2022-07-16 13:28:12,792 p=7796 u=vagrant |  changed: [jenkins]
+2022-07-16 13:28:12,799 p=7796 u=vagrant |  TASK [prometheus.service Start&Enable] *********************************************************************************
+2022-07-16 13:28:12,956 p=7796 u=vagrant |  changed: [jenkins]
+2022-07-16 13:28:12,957 p=7796 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:28:12,957 p=7796 u=vagrant |  jenkins                    : ok=11   changed=2    unreachable=0    failed=0   
+2022-07-16 13:29:53,718 p=8848 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:29:53,727 p=8848 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:29:54,448 p=8848 u=vagrant |  ok: [jenkins]
+2022-07-16 13:29:54,458 p=8848 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:29:55,282 p=8848 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:29:55,291 p=8848 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:29:55,302 p=8848 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:29:55,311 p=8848 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:29:55,661 p=8848 u=vagrant |  ok: [jenkins]
+2022-07-16 13:29:55,671 p=8848 u=vagrant |  TASK [stop service if needed] ******************************************************************************************
+2022-07-16 13:29:55,947 p=8848 u=vagrant |  changed: [jenkins]
+2022-07-16 13:29:55,959 p=8848 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:29:56,215 p=8848 u=vagrant |  ok: [jenkins]
+2022-07-16 13:29:56,224 p=8848 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:30:02,696 p=8848 u=vagrant |  ok: [jenkins]
+2022-07-16 13:30:02,705 p=8848 u=vagrant |  TASK [Copy Prometheus /usr/bin] ****************************************************************************************
+2022-07-16 13:30:03,279 p=8848 u=vagrant |  ok: [jenkins] => (item=prometheus)
+2022-07-16 13:30:03,774 p=8848 u=vagrant |  ok: [jenkins] => (item=promtool)
+2022-07-16 13:30:03,784 p=8848 u=vagrant |  TASK [Copy Prometheus Config from /vagrant/] ***************************************************************************
+2022-07-16 13:30:04,067 p=8848 u=vagrant |  ok: [jenkins]
+2022-07-16 13:30:04,076 p=8848 u=vagrant |  TASK [Copy console* directory] *****************************************************************************************
+2022-07-16 13:30:04,504 p=8848 u=vagrant |  ok: [jenkins] => (item=console_libraries)
+2022-07-16 13:30:05,686 p=8848 u=vagrant |  ok: [jenkins] => (item=consoles)
+2022-07-16 13:30:05,960 p=8848 u=vagrant |  ok: [jenkins] => (item=prometheus.yml)
+2022-07-16 13:30:05,968 p=8848 u=vagrant |  TASK [Copy node_exporter.service] **************************************************************************************
+2022-07-16 13:30:06,181 p=8848 u=vagrant |  ok: [jenkins]
+2022-07-16 13:30:06,188 p=8848 u=vagrant |  TASK [prometheus.service Start&Enable] *********************************************************************************
+2022-07-16 13:30:06,325 p=8848 u=vagrant |  changed: [jenkins]
+2022-07-16 13:30:06,326 p=8848 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:30:06,326 p=8848 u=vagrant |  jenkins                    : ok=11   changed=2    unreachable=0    failed=0   
+2022-07-16 13:32:55,966 p=10034 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:32:55,974 p=10034 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:32:56,654 p=10034 u=vagrant |  ok: [jenkins]
+2022-07-16 13:32:56,663 p=10034 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:32:57,475 p=10034 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:32:57,487 p=10034 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:32:57,499 p=10034 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:32:57,508 p=10034 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:32:57,887 p=10034 u=vagrant |  ok: [jenkins]
+2022-07-16 13:32:57,896 p=10034 u=vagrant |  TASK [stop service if needed] ******************************************************************************************
+2022-07-16 13:32:58,170 p=10034 u=vagrant |  changed: [jenkins]
+2022-07-16 13:32:58,180 p=10034 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:32:58,435 p=10034 u=vagrant |  ok: [jenkins]
+2022-07-16 13:32:58,445 p=10034 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:33:04,984 p=10034 u=vagrant |  ok: [jenkins]
+2022-07-16 13:33:04,995 p=10034 u=vagrant |  TASK [Copy Prometheus /usr/bin] ****************************************************************************************
+2022-07-16 13:33:05,555 p=10034 u=vagrant |  ok: [jenkins] => (item=prometheus)
+2022-07-16 13:33:06,039 p=10034 u=vagrant |  ok: [jenkins] => (item=promtool)
+2022-07-16 13:33:06,048 p=10034 u=vagrant |  TASK [Copy Prometheus Config from /vagrant/] ***************************************************************************
+2022-07-16 13:33:06,300 p=10034 u=vagrant |  ok: [jenkins]
+2022-07-16 13:33:06,307 p=10034 u=vagrant |  TASK [Copy console* directory] *****************************************************************************************
+2022-07-16 13:33:06,759 p=10034 u=vagrant |  changed: [jenkins] => (item=console_libraries)
+2022-07-16 13:33:08,000 p=10034 u=vagrant |  changed: [jenkins] => (item=consoles)
+2022-07-16 13:33:08,302 p=10034 u=vagrant |  changed: [jenkins] => (item=prometheus.yml)
+2022-07-16 13:33:08,311 p=10034 u=vagrant |  TASK [Copy node_exporter.service] **************************************************************************************
+2022-07-16 13:33:08,543 p=10034 u=vagrant |  ok: [jenkins]
+2022-07-16 13:33:08,552 p=10034 u=vagrant |  TASK [prometheus.service Start&Enable] *********************************************************************************
+2022-07-16 13:33:08,712 p=10034 u=vagrant |  changed: [jenkins]
+2022-07-16 13:33:08,714 p=10034 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:33:08,714 p=10034 u=vagrant |  jenkins                    : ok=11   changed=3    unreachable=0    failed=0   
+2022-07-16 13:35:08,683 p=11191 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:35:08,692 p=11191 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:35:09,401 p=11191 u=vagrant |  ok: [jenkins]
+2022-07-16 13:35:09,409 p=11191 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:35:10,267 p=11191 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:35:10,279 p=11191 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:35:10,290 p=11191 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:35:10,301 p=11191 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:35:10,663 p=11191 u=vagrant |  ok: [jenkins]
+2022-07-16 13:35:10,674 p=11191 u=vagrant |  TASK [stop service if needed] ******************************************************************************************
+2022-07-16 13:35:10,934 p=11191 u=vagrant |  changed: [jenkins]
+2022-07-16 13:35:10,944 p=11191 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:35:11,206 p=11191 u=vagrant |  ok: [jenkins]
+2022-07-16 13:35:11,216 p=11191 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:35:17,789 p=11191 u=vagrant |  ok: [jenkins]
+2022-07-16 13:35:17,799 p=11191 u=vagrant |  TASK [Copy Prometheus /usr/bin] ****************************************************************************************
+2022-07-16 13:35:18,361 p=11191 u=vagrant |  ok: [jenkins] => (item=prometheus)
+2022-07-16 13:35:18,852 p=11191 u=vagrant |  ok: [jenkins] => (item=promtool)
+2022-07-16 13:35:18,860 p=11191 u=vagrant |  TASK [Copy console* directory] *****************************************************************************************
+2022-07-16 13:35:19,319 p=11191 u=vagrant |  ok: [jenkins] => (item=console_libraries)
+2022-07-16 13:35:20,487 p=11191 u=vagrant |  ok: [jenkins] => (item=consoles)
+2022-07-16 13:35:20,755 p=11191 u=vagrant |  ok: [jenkins] => (item=prometheus.yml)
+2022-07-16 13:35:20,762 p=11191 u=vagrant |  TASK [Copy node_exporter.service] **************************************************************************************
+2022-07-16 13:35:20,975 p=11191 u=vagrant |  ok: [jenkins]
+2022-07-16 13:35:20,982 p=11191 u=vagrant |  TASK [prometheus.service Start&Enable] *********************************************************************************
+2022-07-16 13:35:21,133 p=11191 u=vagrant |  changed: [jenkins]
+2022-07-16 13:35:21,141 p=11191 u=vagrant |  TASK [Copy Prometheus Config from /vagrant/] ***************************************************************************
+2022-07-16 13:35:21,389 p=11191 u=vagrant |  ok: [jenkins]
+2022-07-16 13:35:21,396 p=11191 u=vagrant |  TASK [prometheus.service Start&Enable] *********************************************************************************
+2022-07-16 13:35:21,536 p=11191 u=vagrant |  fatal: [jenkins]: FAILED! => {"changed": false, "msg": "value of state must be one of: reloaded, restarted, started, stopped, got: reload"}
+2022-07-16 13:35:21,537 p=11191 u=vagrant |  	to retry, use: --limit @/vagrant/ansible/install_prometheus_2.37.retry
+
+2022-07-16 13:35:21,537 p=11191 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:35:21,537 p=11191 u=vagrant |  jenkins                    : ok=11   changed=2    unreachable=0    failed=1   
+2022-07-16 13:35:29,703 p=12263 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:35:29,712 p=12263 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:35:30,244 p=12263 u=vagrant |  ok: [jenkins]
+2022-07-16 13:35:30,252 p=12263 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:35:31,127 p=12263 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:35:31,136 p=12263 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:35:31,149 p=12263 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:35:31,160 p=12263 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:35:31,508 p=12263 u=vagrant |  ok: [jenkins]
+2022-07-16 13:35:31,517 p=12263 u=vagrant |  TASK [stop service if needed] ******************************************************************************************
+2022-07-16 13:35:31,792 p=12263 u=vagrant |  changed: [jenkins]
+2022-07-16 13:35:31,803 p=12263 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:35:32,052 p=12263 u=vagrant |  ok: [jenkins]
+2022-07-16 13:35:32,061 p=12263 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:35:38,466 p=12263 u=vagrant |  ok: [jenkins]
+2022-07-16 13:35:38,475 p=12263 u=vagrant |  TASK [Copy Prometheus /usr/bin] ****************************************************************************************
+2022-07-16 13:35:38,939 p=12263 u=vagrant |  ok: [jenkins] => (item=prometheus)
+2022-07-16 13:35:39,339 p=12263 u=vagrant |  ok: [jenkins] => (item=promtool)
+2022-07-16 13:35:39,346 p=12263 u=vagrant |  TASK [Copy console* directory] *****************************************************************************************
+2022-07-16 13:35:39,755 p=12263 u=vagrant |  ok: [jenkins] => (item=console_libraries)
+2022-07-16 13:35:40,940 p=12263 u=vagrant |  ok: [jenkins] => (item=consoles)
+2022-07-16 13:35:41,221 p=12263 u=vagrant |  ok: [jenkins] => (item=prometheus.yml)
+2022-07-16 13:35:41,228 p=12263 u=vagrant |  TASK [Copy node_exporter.service] **************************************************************************************
+2022-07-16 13:35:41,441 p=12263 u=vagrant |  ok: [jenkins]
+2022-07-16 13:35:41,448 p=12263 u=vagrant |  TASK [prometheus.service Start&Enable] *********************************************************************************
+2022-07-16 13:35:41,592 p=12263 u=vagrant |  changed: [jenkins]
+2022-07-16 13:35:41,601 p=12263 u=vagrant |  TASK [Copy Prometheus Config from /vagrant/] ***************************************************************************
+2022-07-16 13:35:41,835 p=12263 u=vagrant |  ok: [jenkins]
+2022-07-16 13:35:41,843 p=12263 u=vagrant |  TASK [prometheus.service Start&Enable] *********************************************************************************
+2022-07-16 13:35:41,987 p=12263 u=vagrant |  fatal: [jenkins]: FAILED! => {"changed": false, "msg": "Unable to reload service prometheus.service: Failed to reload prometheus.service: Job type reload is not applicable for unit prometheus.service.\nSee system logs and 'systemctl status prometheus.service' for details.\n"}
+2022-07-16 13:35:41,989 p=12263 u=vagrant |  	to retry, use: --limit @/vagrant/ansible/install_prometheus_2.37.retry
+
+2022-07-16 13:35:41,989 p=12263 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:35:41,989 p=12263 u=vagrant |  jenkins                    : ok=11   changed=2    unreachable=0    failed=1   
+2022-07-16 13:36:13,103 p=13324 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:36:13,112 p=13324 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:36:14,649 p=13324 u=vagrant |  ok: [jenkins]
+2022-07-16 13:36:14,658 p=13324 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:36:15,559 p=13324 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:36:15,569 p=13324 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:36:15,580 p=13324 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:36:15,589 p=13324 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:36:15,948 p=13324 u=vagrant |  ok: [jenkins]
+2022-07-16 13:36:15,958 p=13324 u=vagrant |  TASK [stop service if needed] ******************************************************************************************
+2022-07-16 13:36:16,236 p=13324 u=vagrant |  changed: [jenkins]
+2022-07-16 13:36:16,246 p=13324 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:36:16,502 p=13324 u=vagrant |  ok: [jenkins]
+2022-07-16 13:36:16,512 p=13324 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:36:22,975 p=13324 u=vagrant |  ok: [jenkins]
+2022-07-16 13:36:22,985 p=13324 u=vagrant |  TASK [Copy Prometheus /usr/bin] ****************************************************************************************
+2022-07-16 13:36:23,539 p=13324 u=vagrant |  ok: [jenkins] => (item=prometheus)
+2022-07-16 13:36:24,043 p=13324 u=vagrant |  ok: [jenkins] => (item=promtool)
+2022-07-16 13:36:24,072 p=13324 u=vagrant |  TASK [Copy console* directory] *****************************************************************************************
+2022-07-16 13:36:24,521 p=13324 u=vagrant |  ok: [jenkins] => (item=console_libraries)
+2022-07-16 13:36:25,810 p=13324 u=vagrant |  ok: [jenkins] => (item=consoles)
+2022-07-16 13:36:26,131 p=13324 u=vagrant |  ok: [jenkins] => (item=prometheus.yml)
+2022-07-16 13:36:26,140 p=13324 u=vagrant |  TASK [Copy node_exporter.service] **************************************************************************************
+2022-07-16 13:36:26,375 p=13324 u=vagrant |  ok: [jenkins]
+2022-07-16 13:36:26,384 p=13324 u=vagrant |  TASK [prometheus.service Start&Enable] *********************************************************************************
+2022-07-16 13:36:26,542 p=13324 u=vagrant |  changed: [jenkins]
+2022-07-16 13:36:26,551 p=13324 u=vagrant |  TASK [Copy Prometheus Config from /vagrant/] ***************************************************************************
+2022-07-16 13:36:26,810 p=13324 u=vagrant |  ok: [jenkins]
+2022-07-16 13:36:26,819 p=13324 u=vagrant |  TASK [prometheus.service Start&Enable] *********************************************************************************
+2022-07-16 13:36:26,976 p=13324 u=vagrant |  changed: [jenkins]
+2022-07-16 13:36:26,978 p=13324 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:36:26,978 p=13324 u=vagrant |  jenkins                    : ok=12   changed=3    unreachable=0    failed=0   
+2022-07-16 13:39:16,583 p=14441 u=vagrant |  PLAY [Provision a server] **********************************************************************************************
+2022-07-16 13:39:16,592 p=14441 u=vagrant |  TASK [Gathering Facts] *************************************************************************************************
+2022-07-16 13:39:17,281 p=14441 u=vagrant |  ok: [jenkins]
+2022-07-16 13:39:17,289 p=14441 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:39:18,107 p=14441 u=vagrant |  ok: [jenkins] => (item=tar)
+2022-07-16 13:39:18,116 p=14441 u=vagrant |  TASK [Install tar] *****************************************************************************************************
+2022-07-16 13:39:18,128 p=14441 u=vagrant |  skipping: [jenkins] => (item=tar) 
+2022-07-16 13:39:18,140 p=14441 u=vagrant |  TASK [wget Prometheus 2.37] ********************************************************************************************
+2022-07-16 13:39:18,491 p=14441 u=vagrant |  ok: [jenkins]
+2022-07-16 13:39:18,500 p=14441 u=vagrant |  TASK [stop service if needed] ******************************************************************************************
+2022-07-16 13:39:18,760 p=14441 u=vagrant |  changed: [jenkins]
+2022-07-16 13:39:18,768 p=14441 u=vagrant |  TASK [Dir for user data] ***********************************************************************************************
+2022-07-16 13:39:19,022 p=14441 u=vagrant |  ok: [jenkins]
+2022-07-16 13:39:19,031 p=14441 u=vagrant |  TASK [Extract Prometheus] **********************************************************************************************
+2022-07-16 13:39:25,490 p=14441 u=vagrant |  ok: [jenkins]
+2022-07-16 13:39:25,499 p=14441 u=vagrant |  TASK [Copy Prometheus /usr/bin] ****************************************************************************************
+2022-07-16 13:39:26,049 p=14441 u=vagrant |  ok: [jenkins] => (item=prometheus)
+2022-07-16 13:39:26,521 p=14441 u=vagrant |  ok: [jenkins] => (item=promtool)
+2022-07-16 13:39:26,530 p=14441 u=vagrant |  TASK [Copy console* directory] *****************************************************************************************
+2022-07-16 13:39:26,996 p=14441 u=vagrant |  ok: [jenkins] => (item=console_libraries)
+2022-07-16 13:39:28,226 p=14441 u=vagrant |  ok: [jenkins] => (item=consoles)
+2022-07-16 13:39:28,234 p=14441 u=vagrant |  TASK [Copy Prometheus Config from /vagrant/] ***************************************************************************
+2022-07-16 13:39:28,513 p=14441 u=vagrant |  changed: [jenkins]
+2022-07-16 13:39:28,521 p=14441 u=vagrant |  TASK [Copy node_exporter.service] **************************************************************************************
+2022-07-16 13:39:28,743 p=14441 u=vagrant |  ok: [jenkins]
+2022-07-16 13:39:28,751 p=14441 u=vagrant |  TASK [prometheus.service Start&Enable] *********************************************************************************
+2022-07-16 13:39:28,912 p=14441 u=vagrant |  changed: [jenkins]
+2022-07-16 13:39:28,914 p=14441 u=vagrant |  PLAY RECAP *************************************************************************************************************
+2022-07-16 13:39:28,914 p=14441 u=vagrant |  jenkins                    : ok=11   changed=3    unreachable=0    failed=0   
+2022-07-17 17:47:01,678 p=1888 u=vagrant |  ERROR! the playbook: ping could not be found
+2022-07-17 17:48:04,811 p=2013 u=vagrant |  ERROR! Missing target hosts
+2022-07-17 17:48:15,266 p=2020 u=vagrant |   [WARNING]: Could not match supplied host pattern, ignoring: elk
+
+2022-07-17 17:48:15,267 p=2020 u=vagrant |   [WARNING]: No hosts matched, nothing to do
+
+2022-07-17 17:48:42,325 p=2063 u=vagrant |   [WARNING]: Could not match supplied host pattern, ignoring: elk
+
+2022-07-17 17:48:42,325 p=2063 u=vagrant |   [WARNING]: No hosts matched, nothing to do
+
+2022-07-17 17:48:53,914 p=2070 u=vagrant |  jenkins | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '192.168.56.120' (ECDSA) to the list of known hosts.\r\nvagrant@192.168.56.120: Permission denied (publickey).\r\n", 
+    "unreachable": true
+}
+2022-07-17 17:49:10,007 p=2145 u=vagrant |  jenkins | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: vagrant@192.168.56.120: Permission denied (publickey).\r\n", 
+    "unreachable": true
+}
+2022-07-17 17:50:14,505 p=2251 u=vagrant |   [WARNING]: Could not match supplied host pattern, ignoring: elk
+
+2022-07-17 17:50:14,506 p=2251 u=vagrant |   [WARNING]: No hosts matched, nothing to do
+
+2022-07-17 17:50:21,134 p=2258 u=vagrant |   [WARNING]: Could not match supplied host pattern, ignoring: elk
+
+2022-07-17 17:50:21,134 p=2258 u=vagrant |   [WARNING]: No hosts matched, nothing to do
+
+2022-07-17 17:50:33,739 p=2268 u=vagrant |   [WARNING]: Could not match supplied host pattern, ignoring: elk
+
+2022-07-17 17:50:33,740 p=2268 u=vagrant |   [WARNING]: No hosts matched, nothing to do
+
+2022-07-17 17:52:10,327 p=2303 u=vagrant |  elk | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: vagrant@192.168.56.120: Permission denied (publickey).\r\n", 
+    "unreachable": true
+}
+2022-07-17 17:52:12,506 p=2316 u=vagrant |  elk | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: vagrant@192.168.56.120: Permission denied (publickey).\r\n", 
+    "unreachable": true
+}
+2022-07-17 17:55:41,715 p=2454 u=vagrant |  elk | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: vagrant@192.168.56.120: Permission denied (publickey).\r\n", 
+    "unreachable": true
+}
+2022-07-17 17:56:44,831 p=2505 u=vagrant |  elk | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: vagrant@192.168.56.120: Permission denied (publickey).\r\n", 
+    "unreachable": true
+}
+2022-07-17 17:58:47,397 p=2585 u=vagrant |  elk | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: vagrant@192.168.56.120: Permission denied (publickey).\r\n", 
+    "unreachable": true
+}
+2022-07-17 18:00:03,729 p=2653 u=vagrant |  192.168.56.120 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: vagrant@192.168.56.120: Permission denied (publickey).\r\n", 
+    "unreachable": true
+}
+2022-07-17 18:01:29,776 p=2683 u=vagrant |  192.168.56.120 | FAILED! => {
+    "changed": false, 
+    "module_stderr": "Shared connection to 192.168.56.120 closed.\r\n", 
+    "module_stdout": "/bin/sh: 1: /usr/bin/python: not found\r\n", 
+    "msg": "MODULE FAILURE", 
+    "rc": 127
+}
+2022-07-17 18:01:37,075 p=2710 u=vagrant |  192.168.56.120 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: vagrant@192.168.56.120: Permission denied (publickey,password).\r\n", 
+    "unreachable": true
+}
+2022-07-17 18:01:47,471 p=2723 u=vagrant |  192.168.56.120 | FAILED! => {
+    "changed": false, 
+    "module_stderr": "Shared connection to 192.168.56.120 closed.\r\n", 
+    "module_stdout": "/bin/sh: 1: /usr/bin/python: not found\r\n", 
+    "msg": "MODULE FAILURE", 
+    "rc": 127
+}
+2022-07-17 18:03:14,423 p=2770 u=vagrant |   [ERROR]: User interrupted execution
+
+2022-07-17 18:03:18,546 p=2795 u=vagrant |  192.168.56.120 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2022-07-17 18:11:25,177 p=2980 u=vagrant |   [WARNING]: Could not match supplied host pattern, ignoring: jenkins
+
+2022-07-17 18:11:25,178 p=2980 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-17 18:11:25,178 p=2980 u=vagrant |  skipping: no hosts matched
+2022-07-17 18:11:25,178 p=2980 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-17 18:11:49,786 p=3008 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-17 18:11:49,795 p=3008 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-17 18:11:51,038 p=3008 u=vagrant |  ok: [elk]
+2022-07-17 18:11:51,050 p=3008 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-17 18:11:58,341 p=3008 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-17 18:11:58,351 p=3008 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-17 18:11:58,362 p=3008 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-17 18:11:58,372 p=3008 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-17 18:12:07,842 p=3008 u=vagrant |  changed: [elk]
+2022-07-17 18:12:07,854 p=3008 u=vagrant |  TASK [stop service if needed] **************************************************
+2022-07-17 18:12:08,128 p=3008 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find the requested service prometheus.service: host"}
+2022-07-17 18:12:08,130 p=3008 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-17 18:12:08,130 p=3008 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-17 18:12:08,130 p=3008 u=vagrant |  elk                        : ok=3    changed=1    unreachable=0    failed=1   
+2022-07-17 18:13:22,070 p=3123 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-17 18:13:22,079 p=3123 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-17 18:13:23,409 p=3123 u=vagrant |  ok: [elk]
+2022-07-17 18:13:23,421 p=3123 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-17 18:13:24,030 p=3123 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-17 18:13:24,042 p=3123 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-17 18:13:24,052 p=3123 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-17 18:13:24,063 p=3123 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-17 18:13:24,359 p=3123 u=vagrant |  ok: [elk]
+2022-07-17 18:13:24,371 p=3123 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-17 18:13:24,659 p=3123 u=vagrant |  changed: [elk]
+2022-07-17 18:13:24,678 p=3123 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-17 18:13:24,745 p=3123 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/tmp/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-17 18:13:24,746 p=3123 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-17 18:13:24,746 p=3123 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-17 18:13:24,747 p=3123 u=vagrant |  elk                        : ok=4    changed=1    unreachable=0    failed=1   
+2022-07-17 18:15:13,859 p=3260 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-17 18:15:13,868 p=3260 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-17 18:15:15,030 p=3260 u=vagrant |  ok: [elk]
+2022-07-17 18:15:15,042 p=3260 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-17 18:15:15,633 p=3260 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-17 18:15:15,646 p=3260 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-17 18:15:15,656 p=3260 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-17 18:15:15,668 p=3260 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-17 18:15:15,970 p=3260 u=vagrant |  ok: [elk]
+2022-07-17 18:15:15,982 p=3260 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-17 18:15:16,245 p=3260 u=vagrant |  ok: [elk]
+2022-07-17 18:15:16,258 p=3260 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-17 18:15:16,326 p=3260 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/tmp/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-17 18:15:16,327 p=3260 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-17 18:15:16,328 p=3260 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-17 18:15:16,328 p=3260 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-17 18:16:00,193 p=3390 u=vagrant |  ansible-playbook 2.5.1
+  config file = /vagrant/ansible_elk/ansible.cfg
+  configured module search path = [u'/home/vagrant/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.17 (default, Mar 18 2022, 13:21:42) [GCC 7.5.0]
+2022-07-17 18:16:00,194 p=3390 u=vagrant |  Using /vagrant/ansible_elk/ansible.cfg as config file
+2022-07-17 18:16:00,362 p=3390 u=vagrant |  PLAYBOOK: install_prometheus_2.37.yml ******************************************
+2022-07-17 18:16:00,363 p=3390 u=vagrant |  1 plays in install_prometheus_2.37.yml
+2022-07-17 18:16:00,379 p=3390 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-17 18:16:00,388 p=3390 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-17 18:16:00,388 p=3390 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:1
+2022-07-17 18:16:01,148 p=3390 u=vagrant |  ok: [elk]
+2022-07-17 18:16:01,149 p=3390 u=vagrant |  META: ran handlers
+2022-07-17 18:16:01,159 p=3390 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-17 18:16:01,160 p=3390 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:7
+2022-07-17 18:16:01,762 p=3390 u=vagrant |  ok: [elk] => (item=tar) => {"cache_update_time": 1658081512, "cache_updated": false, "changed": false, "item": "tar"}
+2022-07-17 18:16:01,776 p=3390 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-17 18:16:01,776 p=3390 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:17
+2022-07-17 18:16:01,788 p=3390 u=vagrant |  skipping: [elk] => (item=tar)  => {"changed": false, "item": "tar", "skip_reason": "Conditional result was False"}
+2022-07-17 18:16:01,802 p=3390 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-17 18:16:01,802 p=3390 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:27
+2022-07-17 18:16:02,099 p=3390 u=vagrant |  ok: [elk] => {"changed": false, "dest": "/tmp/prometheus-2.37.0.linux-amd64.tar.gz", "gid": 0, "group": "root", "mode": "0644", "msg": "file already exists", "owner": "root", "size": 83782323, "state": "file", "uid": 0, "url": "https://github.com/prometheus/prometheus/releases/download/v2.37.0/prometheus-2.37.0.linux-amd64.tar.gz"}
+2022-07-17 18:16:02,113 p=3390 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-17 18:16:02,113 p=3390 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:32
+2022-07-17 18:16:02,387 p=3390 u=vagrant |  ok: [elk] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/tmp/prometheus", "size": 4096, "state": "directory", "uid": 0}
+2022-07-17 18:16:02,399 p=3390 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-17 18:16:02,399 p=3390 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:37
+2022-07-17 18:16:02,463 p=3390 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/tmp/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-17 18:16:02,465 p=3390 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-17 18:16:02,465 p=3390 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-17 18:16:02,465 p=3390 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-17 18:16:09,582 p=3485 u=vagrant |  ansible-playbook 2.5.1
+  config file = /vagrant/ansible_elk/ansible.cfg
+  configured module search path = [u'/home/vagrant/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.17 (default, Mar 18 2022, 13:21:42) [GCC 7.5.0]
+2022-07-17 18:16:09,582 p=3485 u=vagrant |  Using /vagrant/ansible_elk/ansible.cfg as config file
+2022-07-17 18:16:09,583 p=3485 u=vagrant |  setting up inventory plugins
+2022-07-17 18:16:09,593 p=3485 u=vagrant |  Parsed /vagrant/ansible_elk/inventory-promNodeExp inventory source with ini plugin
+2022-07-17 18:16:09,677 p=3485 u=vagrant |  Loading callback plugin default of type stdout, v2.0 from /usr/lib/python2.7/dist-packages/ansible/plugins/callback/default.pyc
+2022-07-17 18:16:09,743 p=3485 u=vagrant |  PLAYBOOK: install_prometheus_2.37.yml ******************************************
+2022-07-17 18:16:09,744 p=3485 u=vagrant |  1 plays in install_prometheus_2.37.yml
+2022-07-17 18:16:09,759 p=3485 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-17 18:16:09,767 p=3485 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-17 18:16:09,767 p=3485 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:1
+2022-07-17 18:16:09,981 p=3485 u=vagrant |  Using module file /usr/lib/python2.7/dist-packages/ansible/modules/system/setup.py
+2022-07-17 18:16:10,064 p=3485 u=vagrant |  Escalation succeeded
+2022-07-17 18:16:10,554 p=3485 u=vagrant |  ok: [elk]
+2022-07-17 18:16:10,555 p=3485 u=vagrant |  META: ran handlers
+2022-07-17 18:16:10,571 p=3485 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-17 18:16:10,572 p=3485 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:7
+2022-07-17 18:16:10,723 p=3485 u=vagrant |  Using module file /usr/lib/python2.7/dist-packages/ansible/modules/packaging/os/apt.py
+2022-07-17 18:16:10,799 p=3485 u=vagrant |  Escalation succeeded
+2022-07-17 18:16:11,174 p=3485 u=vagrant |  ok: [elk] => (item=tar) => {
+    "cache_update_time": 1658081512, 
+    "cache_updated": false, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "allow_unauthenticated": false, 
+            "autoclean": false, 
+            "autoremove": false, 
+            "cache_valid_time": 0, 
+            "deb": null, 
+            "default_release": null, 
+            "dpkg_options": "force-confdef,force-confold", 
+            "force": false, 
+            "force_apt_get": false, 
+            "install_recommends": null, 
+            "name": "tar", 
+            "only_upgrade": false, 
+            "package": [
+                "tar"
+            ], 
+            "purge": false, 
+            "state": "present", 
+            "update_cache": null, 
+            "upgrade": null
+        }
+    }, 
+    "item": "tar"
+}
+2022-07-17 18:16:11,186 p=3485 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-17 18:16:11,186 p=3485 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:17
+2022-07-17 18:16:11,197 p=3485 u=vagrant |  skipping: [elk] => (item=tar)  => {
+    "changed": false, 
+    "item": "tar", 
+    "skip_reason": "Conditional result was False"
+}
+2022-07-17 18:16:11,208 p=3485 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-17 18:16:11,208 p=3485 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:27
+2022-07-17 18:16:11,334 p=3485 u=vagrant |  Using module file /usr/lib/python2.7/dist-packages/ansible/modules/net_tools/basics/get_url.py
+2022-07-17 18:16:11,410 p=3485 u=vagrant |  Escalation succeeded
+2022-07-17 18:16:11,512 p=3485 u=vagrant |  ok: [elk] => {
+    "changed": false, 
+    "dest": "/tmp/prometheus-2.37.0.linux-amd64.tar.gz", 
+    "gid": 0, 
+    "group": "root", 
+    "invocation": {
+        "module_args": {
+            "attributes": null, 
+            "backup": null, 
+            "checksum": "", 
+            "client_cert": null, 
+            "client_key": null, 
+            "content": null, 
+            "delimiter": null, 
+            "dest": "/tmp/prometheus-2.37.0.linux-amd64.tar.gz", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": false, 
+            "force_basic_auth": false, 
+            "group": null, 
+            "headers": null, 
+            "http_agent": "ansible-httpget", 
+            "mode": null, 
+            "owner": null, 
+            "path": "/tmp/prometheus-2.37.0.linux-amd64.tar.gz", 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "sha256sum": "", 
+            "src": null, 
+            "timeout": 10, 
+            "tmp_dest": null, 
+            "unsafe_writes": null, 
+            "url": "https://github.com/prometheus/prometheus/releases/download/v2.37.0/prometheus-2.37.0.linux-amd64.tar.gz", 
+            "url_password": null, 
+            "url_username": null, 
+            "use_proxy": true, 
+            "validate_certs": true
+        }
+    }, 
+    "mode": "0644", 
+    "msg": "file already exists", 
+    "owner": "root", 
+    "size": 83782323, 
+    "state": "file", 
+    "uid": 0, 
+    "url": "https://github.com/prometheus/prometheus/releases/download/v2.37.0/prometheus-2.37.0.linux-amd64.tar.gz"
+}
+2022-07-17 18:16:11,523 p=3485 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-17 18:16:11,524 p=3485 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:32
+2022-07-17 18:16:11,647 p=3485 u=vagrant |  Using module file /usr/lib/python2.7/dist-packages/ansible/modules/files/file.py
+2022-07-17 18:16:11,735 p=3485 u=vagrant |  Escalation succeeded
+2022-07-17 18:16:11,819 p=3485 u=vagrant |  ok: [elk] => {
+    "changed": false, 
+    "diff": {
+        "after": {
+            "path": "/tmp/prometheus"
+        }, 
+        "before": {
+            "path": "/tmp/prometheus"
+        }
+    }, 
+    "gid": 0, 
+    "group": "root", 
+    "invocation": {
+        "module_args": {
+            "attributes": null, 
+            "backup": null, 
+            "content": null, 
+            "delimiter": null, 
+            "diff_peek": null, 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": false, 
+            "group": null, 
+            "mode": null, 
+            "original_basename": null, 
+            "owner": null, 
+            "path": "/tmp/prometheus", 
+            "recurse": false, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "directory", 
+            "unsafe_writes": null, 
+            "validate": null
+        }
+    }, 
+    "mode": "0755", 
+    "owner": "root", 
+    "path": "/tmp/prometheus", 
+    "size": 4096, 
+    "state": "directory", 
+    "uid": 0
+}
+2022-07-17 18:16:11,831 p=3485 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-17 18:16:11,831 p=3485 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:37
+2022-07-17 18:16:11,903 p=3485 u=vagrant |  fatal: [elk]: FAILED! => {
+    "changed": false, 
+    "msg": "Could not find or access '/tmp/prometheus-2.37.0.linux-amd64.tar.gz'"
+}
+2022-07-17 18:16:11,905 p=3485 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-17 18:16:11,905 p=3485 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-17 18:16:11,905 p=3485 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 16:04:01,038 p=2463 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:04:01,053 p=2463 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:04:02,200 p=2463 u=vagrant |  ok: [elk]
+2022-07-18 16:04:02,208 p=2463 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:04:02,740 p=2463 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:04:02,749 p=2463 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:04:02,757 p=2463 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:04:02,765 p=2463 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:04:12,541 p=2463 u=vagrant |  changed: [elk]
+2022-07-18 16:04:12,553 p=2463 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:04:12,781 p=2463 u=vagrant |  changed: [elk]
+2022-07-18 16:04:12,792 p=2463 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 16:04:12,860 p=2463 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/tmp/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 16:04:12,861 p=2463 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:04:12,861 p=2463 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:04:12,861 p=2463 u=vagrant |  elk                        : ok=4    changed=2    unreachable=0    failed=1   
+2022-07-18 16:08:38,046 p=2618 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:08:38,052 p=2618 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:08:39,037 p=2618 u=vagrant |  ok: [elk]
+2022-07-18 16:08:39,045 p=2618 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:08:39,516 p=2618 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:08:39,528 p=2618 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:08:39,536 p=2618 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:08:39,548 p=2618 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:08:50,268 p=2618 u=vagrant |  ok: [elk]
+2022-07-18 16:08:50,276 p=2618 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:08:50,499 p=2618 u=vagrant |  ok: [elk]
+2022-07-18 16:08:50,508 p=2618 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 16:08:50,563 p=2618 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/tmp/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 16:08:50,564 p=2618 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:08:50,565 p=2618 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:08:50,565 p=2618 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 16:11:12,431 p=2730 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:11:12,437 p=2730 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:11:13,410 p=2730 u=vagrant |  ok: [elk]
+2022-07-18 16:11:13,422 p=2730 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:11:13,864 p=2730 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:11:13,877 p=2730 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:11:13,887 p=2730 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:11:13,895 p=2730 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:11:14,120 p=2730 u=vagrant |  ok: [elk]
+2022-07-18 16:11:14,129 p=2730 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:11:14,335 p=2730 u=vagrant |  ok: [elk]
+2022-07-18 16:11:14,344 p=2730 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 16:11:14,392 p=2730 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/tmp/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 16:11:14,394 p=2730 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:11:14,394 p=2730 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:11:14,394 p=2730 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 16:11:23,698 p=2818 u=vagrant |  ansible-playbook 2.5.1
+  config file = /vagrant/ansible_elk/ansible.cfg
+  configured module search path = [u'/home/vagrant/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.17 (default, Mar 18 2022, 13:21:42) [GCC 7.5.0]
+2022-07-18 16:11:23,698 p=2818 u=vagrant |  Using /vagrant/ansible_elk/ansible.cfg as config file
+2022-07-18 16:11:23,698 p=2818 u=vagrant |  setting up inventory plugins
+2022-07-18 16:11:23,705 p=2818 u=vagrant |  Parsed /vagrant/ansible_elk/inventory-promNodeExp inventory source with ini plugin
+2022-07-18 16:11:23,770 p=2818 u=vagrant |  Loading callback plugin default of type stdout, v2.0 from /usr/lib/python2.7/dist-packages/ansible/plugins/callback/default.pyc
+2022-07-18 16:11:23,818 p=2818 u=vagrant |  PLAYBOOK: install_prometheus_2.37.yml ******************************************
+2022-07-18 16:11:23,819 p=2818 u=vagrant |  1 plays in install_prometheus_2.37.yml
+2022-07-18 16:11:23,830 p=2818 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:11:23,837 p=2818 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:11:23,837 p=2818 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:1
+2022-07-18 16:11:23,993 p=2818 u=vagrant |  Using module file /usr/lib/python2.7/dist-packages/ansible/modules/system/setup.py
+2022-07-18 16:11:24,079 p=2818 u=vagrant |  Escalation succeeded
+2022-07-18 16:11:24,487 p=2818 u=vagrant |  ok: [elk]
+2022-07-18 16:11:24,487 p=2818 u=vagrant |  META: ran handlers
+2022-07-18 16:11:24,495 p=2818 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:11:24,495 p=2818 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:7
+2022-07-18 16:11:24,598 p=2818 u=vagrant |  Using module file /usr/lib/python2.7/dist-packages/ansible/modules/packaging/os/apt.py
+2022-07-18 16:11:24,654 p=2818 u=vagrant |  Escalation succeeded
+2022-07-18 16:11:24,920 p=2818 u=vagrant |  ok: [elk] => (item=tar) => {
+    "cache_update_time": 1658081512, 
+    "cache_updated": false, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "allow_unauthenticated": false, 
+            "autoclean": false, 
+            "autoremove": false, 
+            "cache_valid_time": 0, 
+            "deb": null, 
+            "default_release": null, 
+            "dpkg_options": "force-confdef,force-confold", 
+            "force": false, 
+            "force_apt_get": false, 
+            "install_recommends": null, 
+            "name": "tar", 
+            "only_upgrade": false, 
+            "package": [
+                "tar"
+            ], 
+            "purge": false, 
+            "state": "present", 
+            "update_cache": null, 
+            "upgrade": null
+        }
+    }, 
+    "item": "tar"
+}
+2022-07-18 16:11:24,929 p=2818 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:11:24,929 p=2818 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:17
+2022-07-18 16:11:24,937 p=2818 u=vagrant |  skipping: [elk] => (item=tar)  => {
+    "changed": false, 
+    "item": "tar", 
+    "skip_reason": "Conditional result was False"
+}
+2022-07-18 16:11:24,946 p=2818 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:11:24,946 p=2818 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:27
+2022-07-18 16:11:25,039 p=2818 u=vagrant |  Using module file /usr/lib/python2.7/dist-packages/ansible/modules/net_tools/basics/get_url.py
+2022-07-18 16:11:25,094 p=2818 u=vagrant |  Escalation succeeded
+2022-07-18 16:11:25,165 p=2818 u=vagrant |  ok: [elk] => {
+    "changed": false, 
+    "dest": "/tmp/prometheus-2.37.0.linux-amd64.tar.gz", 
+    "gid": 0, 
+    "group": "root", 
+    "invocation": {
+        "module_args": {
+            "attributes": null, 
+            "backup": null, 
+            "checksum": "", 
+            "client_cert": null, 
+            "client_key": null, 
+            "content": null, 
+            "delimiter": null, 
+            "dest": "/tmp/prometheus-2.37.0.linux-amd64.tar.gz", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": false, 
+            "force_basic_auth": false, 
+            "group": null, 
+            "headers": null, 
+            "http_agent": "ansible-httpget", 
+            "mode": null, 
+            "owner": null, 
+            "path": "/tmp/prometheus-2.37.0.linux-amd64.tar.gz", 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "sha256sum": "", 
+            "src": null, 
+            "timeout": 10, 
+            "tmp_dest": null, 
+            "unsafe_writes": null, 
+            "url": "https://github.com/prometheus/prometheus/releases/download/v2.37.0/prometheus-2.37.0.linux-amd64.tar.gz", 
+            "url_password": null, 
+            "url_username": null, 
+            "use_proxy": true, 
+            "validate_certs": true
+        }
+    }, 
+    "mode": "0644", 
+    "msg": "file already exists", 
+    "owner": "root", 
+    "size": 83782323, 
+    "state": "file", 
+    "uid": 0, 
+    "url": "https://github.com/prometheus/prometheus/releases/download/v2.37.0/prometheus-2.37.0.linux-amd64.tar.gz"
+}
+2022-07-18 16:11:25,176 p=2818 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:11:25,176 p=2818 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:32
+2022-07-18 16:11:25,265 p=2818 u=vagrant |  Using module file /usr/lib/python2.7/dist-packages/ansible/modules/files/file.py
+2022-07-18 16:11:25,321 p=2818 u=vagrant |  Escalation succeeded
+2022-07-18 16:11:25,379 p=2818 u=vagrant |  ok: [elk] => {
+    "changed": false, 
+    "diff": {
+        "after": {
+            "path": "/tmp/prometheus"
+        }, 
+        "before": {
+            "path": "/tmp/prometheus"
+        }
+    }, 
+    "gid": 0, 
+    "group": "root", 
+    "invocation": {
+        "module_args": {
+            "attributes": null, 
+            "backup": null, 
+            "content": null, 
+            "delimiter": null, 
+            "diff_peek": null, 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": false, 
+            "group": null, 
+            "mode": null, 
+            "original_basename": null, 
+            "owner": null, 
+            "path": "/tmp/prometheus", 
+            "recurse": false, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "directory", 
+            "unsafe_writes": null, 
+            "validate": null
+        }
+    }, 
+    "mode": "0755", 
+    "owner": "root", 
+    "path": "/tmp/prometheus", 
+    "size": 4096, 
+    "state": "directory", 
+    "uid": 0
+}
+2022-07-18 16:11:25,388 p=2818 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 16:11:25,388 p=2818 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:37
+2022-07-18 16:11:25,452 p=2818 u=vagrant |  fatal: [elk]: FAILED! => {
+    "changed": false, 
+    "msg": "Could not find or access '/tmp/prometheus-2.37.0.linux-amd64.tar.gz'"
+}
+2022-07-18 16:11:25,453 p=2818 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:11:25,453 p=2818 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:11:25,453 p=2818 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 16:15:27,431 p=2946 u=vagrant |  ansible-playbook 2.5.1
+  config file = /vagrant/ansible_elk/ansible.cfg
+  configured module search path = [u'/home/vagrant/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.17 (default, Mar 18 2022, 13:21:42) [GCC 7.5.0]
+2022-07-18 16:15:27,432 p=2946 u=vagrant |  Using /vagrant/ansible_elk/ansible.cfg as config file
+2022-07-18 16:15:27,432 p=2946 u=vagrant |  setting up inventory plugins
+2022-07-18 16:15:27,439 p=2946 u=vagrant |  Parsed /vagrant/ansible_elk/inventory-promNodeExp inventory source with ini plugin
+2022-07-18 16:15:27,504 p=2946 u=vagrant |  Loading callback plugin default of type stdout, v2.0 from /usr/lib/python2.7/dist-packages/ansible/plugins/callback/default.pyc
+2022-07-18 16:15:27,553 p=2946 u=vagrant |  PLAYBOOK: install_prometheus_2.37.yml ******************************************
+2022-07-18 16:15:27,553 p=2946 u=vagrant |  1 plays in install_prometheus_2.37.yml
+2022-07-18 16:15:27,564 p=2946 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:15:27,571 p=2946 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:15:27,571 p=2946 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:1
+2022-07-18 16:15:27,724 p=2946 u=vagrant |  Using module file /usr/lib/python2.7/dist-packages/ansible/modules/system/setup.py
+2022-07-18 16:15:29,097 p=2946 u=vagrant |  Escalation succeeded
+2022-07-18 16:15:29,528 p=2946 u=vagrant |  ok: [elk]
+2022-07-18 16:15:29,528 p=2946 u=vagrant |  META: ran handlers
+2022-07-18 16:15:29,536 p=2946 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:15:29,536 p=2946 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:7
+2022-07-18 16:15:29,647 p=2946 u=vagrant |  Using module file /usr/lib/python2.7/dist-packages/ansible/modules/packaging/os/apt.py
+2022-07-18 16:15:29,706 p=2946 u=vagrant |  Escalation succeeded
+2022-07-18 16:15:29,980 p=2946 u=vagrant |  ok: [elk] => (item=tar) => {
+    "cache_update_time": 1658081512, 
+    "cache_updated": false, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "allow_unauthenticated": false, 
+            "autoclean": false, 
+            "autoremove": false, 
+            "cache_valid_time": 0, 
+            "deb": null, 
+            "default_release": null, 
+            "dpkg_options": "force-confdef,force-confold", 
+            "force": false, 
+            "force_apt_get": false, 
+            "install_recommends": null, 
+            "name": "tar", 
+            "only_upgrade": false, 
+            "package": [
+                "tar"
+            ], 
+            "purge": false, 
+            "state": "present", 
+            "update_cache": null, 
+            "upgrade": null
+        }
+    }, 
+    "item": "tar"
+}
+2022-07-18 16:15:29,990 p=2946 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:15:29,990 p=2946 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:17
+2022-07-18 16:15:30,000 p=2946 u=vagrant |  skipping: [elk] => (item=tar)  => {
+    "changed": false, 
+    "item": "tar", 
+    "skip_reason": "Conditional result was False"
+}
+2022-07-18 16:15:30,008 p=2946 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:15:30,008 p=2946 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:27
+2022-07-18 16:15:30,108 p=2946 u=vagrant |  Using module file /usr/lib/python2.7/dist-packages/ansible/modules/net_tools/basics/get_url.py
+2022-07-18 16:15:30,167 p=2946 u=vagrant |  Escalation succeeded
+2022-07-18 16:15:40,666 p=2946 u=vagrant |  changed: [elk] => {
+    "changed": true, 
+    "checksum_dest": null, 
+    "checksum_src": "e5a362f239dbba2679c37e8e926f211e8dcc147e", 
+    "dest": "/root/prometheus-2.37.0.linux-amd64.tar.gz", 
+    "gid": 0, 
+    "group": "root", 
+    "invocation": {
+        "module_args": {
+            "attributes": null, 
+            "backup": null, 
+            "checksum": "", 
+            "client_cert": null, 
+            "client_key": null, 
+            "content": null, 
+            "delimiter": null, 
+            "dest": "/root/prometheus-2.37.0.linux-amd64.tar.gz", 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": false, 
+            "force_basic_auth": false, 
+            "group": null, 
+            "headers": null, 
+            "http_agent": "ansible-httpget", 
+            "mode": null, 
+            "owner": null, 
+            "path": "/root/prometheus-2.37.0.linux-amd64.tar.gz", 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "sha256sum": "", 
+            "src": null, 
+            "timeout": 10, 
+            "tmp_dest": null, 
+            "unsafe_writes": null, 
+            "url": "https://github.com/prometheus/prometheus/releases/download/v2.37.0/prometheus-2.37.0.linux-amd64.tar.gz", 
+            "url_password": null, 
+            "url_username": null, 
+            "use_proxy": true, 
+            "validate_certs": true
+        }
+    }, 
+    "md5sum": "5521dcbf6343aa71abe8acba464add51", 
+    "mode": "0644", 
+    "msg": "OK (83782323 bytes)", 
+    "owner": "root", 
+    "size": 83782323, 
+    "src": "/tmp/tmpVms6ZZ", 
+    "state": "file", 
+    "status_code": 200, 
+    "uid": 0, 
+    "url": "https://github.com/prometheus/prometheus/releases/download/v2.37.0/prometheus-2.37.0.linux-amd64.tar.gz"
+}
+2022-07-18 16:15:40,678 p=2946 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:15:40,678 p=2946 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:32
+2022-07-18 16:15:40,784 p=2946 u=vagrant |  Using module file /usr/lib/python2.7/dist-packages/ansible/modules/files/file.py
+2022-07-18 16:15:40,851 p=2946 u=vagrant |  Escalation succeeded
+2022-07-18 16:15:40,909 p=2946 u=vagrant |  changed: [elk] => {
+    "changed": true, 
+    "diff": {
+        "after": {
+            "path": "/root/prometheus", 
+            "state": "directory"
+        }, 
+        "before": {
+            "path": "/root/prometheus", 
+            "state": "absent"
+        }
+    }, 
+    "gid": 0, 
+    "group": "root", 
+    "invocation": {
+        "module_args": {
+            "attributes": null, 
+            "backup": null, 
+            "content": null, 
+            "delimiter": null, 
+            "diff_peek": null, 
+            "directory_mode": null, 
+            "follow": false, 
+            "force": false, 
+            "group": null, 
+            "mode": null, 
+            "original_basename": null, 
+            "owner": null, 
+            "path": "/root/prometheus", 
+            "recurse": false, 
+            "regexp": null, 
+            "remote_src": null, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "state": "directory", 
+            "unsafe_writes": null, 
+            "validate": null
+        }
+    }, 
+    "mode": "0755", 
+    "owner": "root", 
+    "path": "/root/prometheus", 
+    "size": 4096, 
+    "state": "directory", 
+    "uid": 0
+}
+2022-07-18 16:15:40,918 p=2946 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 16:15:40,918 p=2946 u=vagrant |  task path: /vagrant/ansible_elk/install_prometheus_2.37.yml:37
+2022-07-18 16:15:40,994 p=2946 u=vagrant |  fatal: [elk]: FAILED! => {
+    "changed": false, 
+    "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"
+}
+2022-07-18 16:15:40,995 p=2946 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:15:40,995 p=2946 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:15:40,995 p=2946 u=vagrant |  elk                        : ok=4    changed=2    unreachable=0    failed=1   
+2022-07-18 16:16:33,567 p=3052 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:16:33,573 p=3052 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:16:34,178 p=3052 u=vagrant |  ok: [elk]
+2022-07-18 16:16:34,186 p=3052 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:16:34,662 p=3052 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:16:34,670 p=3052 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:16:34,680 p=3052 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:16:34,688 p=3052 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:16:34,913 p=3052 u=vagrant |  ok: [elk]
+2022-07-18 16:16:34,921 p=3052 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:16:35,148 p=3052 u=vagrant |  ok: [elk]
+2022-07-18 16:16:35,160 p=3052 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 16:16:35,219 p=3052 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 16:16:35,220 p=3052 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:16:35,220 p=3052 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:16:35,221 p=3052 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 16:28:36,060 p=3269 u=vagrant |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/vagrant/ansible_elk/install_prometheus_2.37.yml': line 32, column 11, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+        - name: Change file ownership, group and permissions
+          ^ here
+
+2022-07-18 16:30:55,011 p=3306 u=vagrant |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/vagrant/ansible_elk/install_prometheus_2.37.yml': line 32, column 11, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+        - name: Change file ownership, group and permissions
+          ^ here
+
+2022-07-18 16:35:30,990 p=3363 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:35:30,997 p=3363 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:35:32,085 p=3363 u=vagrant |  ok: [elk]
+2022-07-18 16:35:32,093 p=3363 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:35:32,571 p=3363 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:35:32,580 p=3363 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:35:32,590 p=3363 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:35:32,599 p=3363 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:35:41,780 p=3363 u=vagrant |  changed: [elk]
+2022-07-18 16:35:41,788 p=3363 u=vagrant |  TASK [Change file ownership, group and permissions] ****************************
+2022-07-18 16:35:41,986 p=3363 u=vagrant |  changed: [elk]
+2022-07-18 16:35:41,994 p=3363 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:35:42,118 p=3363 u=vagrant |  changed: [elk]
+2022-07-18 16:35:42,126 p=3363 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 16:35:42,190 p=3363 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 16:35:42,192 p=3363 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:35:42,192 p=3363 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:35:42,192 p=3363 u=vagrant |  elk                        : ok=5    changed=3    unreachable=0    failed=1   
+2022-07-18 16:36:23,301 p=3476 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:36:23,307 p=3476 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:36:24,916 p=3476 u=vagrant |  ok: [elk]
+2022-07-18 16:36:24,924 p=3476 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:36:25,398 p=3476 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:36:25,406 p=3476 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:36:25,420 p=3476 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:36:25,428 p=3476 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:36:25,700 p=3476 u=vagrant |  ok: [elk]
+2022-07-18 16:36:25,709 p=3476 u=vagrant |  TASK [Change file ownership, group and permissions] ****************************
+2022-07-18 16:36:25,905 p=3476 u=vagrant |  ok: [elk]
+2022-07-18 16:36:25,913 p=3476 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:36:26,037 p=3476 u=vagrant |  ok: [elk]
+2022-07-18 16:36:26,045 p=3476 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 16:36:26,097 p=3476 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 16:36:26,098 p=3476 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:36:26,098 p=3476 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:36:26,098 p=3476 u=vagrant |  elk                        : ok=5    changed=0    unreachable=0    failed=1   
+2022-07-18 16:40:59,437 p=3619 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:40:59,444 p=3619 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:41:00,434 p=3619 u=vagrant |  ok: [elk]
+2022-07-18 16:41:00,442 p=3619 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:41:00,874 p=3619 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:41:00,882 p=3619 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:41:00,891 p=3619 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:41:00,901 p=3619 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:41:01,135 p=3619 u=vagrant |  ok: [elk]
+2022-07-18 16:41:01,144 p=3619 u=vagrant |  TASK [Change file ownership, group and permissions] ****************************
+2022-07-18 16:41:01,339 p=3619 u=vagrant |  ok: [elk]
+2022-07-18 16:41:01,347 p=3619 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:41:01,479 p=3619 u=vagrant |  changed: [elk]
+2022-07-18 16:41:01,488 p=3619 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 16:41:01,542 p=3619 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 16:41:01,544 p=3619 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:41:01,544 p=3619 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:41:01,544 p=3619 u=vagrant |  elk                        : ok=5    changed=1    unreachable=0    failed=1   
+2022-07-18 16:43:10,213 p=3743 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:43:10,220 p=3743 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:43:11,070 p=3743 u=vagrant |  ok: [elk]
+2022-07-18 16:43:11,082 p=3743 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:43:11,550 p=3743 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:43:11,562 p=3743 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:43:11,571 p=3743 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:43:11,580 p=3743 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:43:11,802 p=3743 u=vagrant |  ok: [elk]
+2022-07-18 16:43:11,814 p=3743 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:43:12,028 p=3743 u=vagrant |  ok: [elk]
+2022-07-18 16:43:12,036 p=3743 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 16:43:12,084 p=3743 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 16:43:12,086 p=3743 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:43:12,086 p=3743 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:43:12,086 p=3743 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 16:45:12,433 p=3842 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:45:12,440 p=3842 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:45:13,457 p=3842 u=vagrant |  ok: [elk]
+2022-07-18 16:45:13,465 p=3842 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:45:13,933 p=3842 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:45:13,941 p=3842 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:45:13,948 p=3842 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:45:13,956 p=3842 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:45:14,178 p=3842 u=vagrant |  ok: [elk]
+2022-07-18 16:45:14,186 p=3842 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:45:14,391 p=3842 u=vagrant |  ok: [elk]
+2022-07-18 16:45:14,400 p=3842 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 16:45:14,453 p=3842 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 16:45:14,454 p=3842 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:45:14,454 p=3842 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:45:14,454 p=3842 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 16:46:50,155 p=3943 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:46:50,161 p=3943 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:46:51,037 p=3943 u=vagrant |  ok: [elk]
+2022-07-18 16:46:51,044 p=3943 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:46:51,472 p=3943 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:46:51,481 p=3943 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:46:51,488 p=3943 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:46:51,496 p=3943 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:46:51,740 p=3943 u=vagrant |  ok: [elk]
+2022-07-18 16:46:51,748 p=3943 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:46:51,956 p=3943 u=vagrant |  ok: [elk]
+2022-07-18 16:46:51,964 p=3943 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 16:46:52,016 p=3943 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 16:46:52,017 p=3943 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:46:52,018 p=3943 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:46:52,018 p=3943 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 16:47:04,919 p=4031 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:47:04,926 p=4031 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:47:05,501 p=4031 u=vagrant |  ok: [elk]
+2022-07-18 16:47:05,509 p=4031 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:47:05,944 p=4031 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:47:05,954 p=4031 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:47:05,965 p=4031 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:47:05,976 p=4031 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:47:06,204 p=4031 u=vagrant |  ok: [elk]
+2022-07-18 16:47:06,212 p=4031 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:47:06,456 p=4031 u=vagrant |  ok: [elk]
+2022-07-18 16:47:06,469 p=4031 u=vagrant |  TASK [Extract Prometheus !!!] **************************************************
+2022-07-18 16:47:06,533 p=4031 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 16:47:06,534 p=4031 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:47:06,534 p=4031 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:47:06,534 p=4031 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 16:50:43,403 p=4142 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:50:43,410 p=4142 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:50:44,317 p=4142 u=vagrant |  ok: [elk]
+2022-07-18 16:50:44,329 p=4142 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:50:44,823 p=4142 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:50:44,831 p=4142 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:50:44,841 p=4142 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:50:44,849 p=4142 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:50:45,093 p=4142 u=vagrant |  ok: [elk]
+2022-07-18 16:50:45,101 p=4142 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:50:45,331 p=4142 u=vagrant |  ok: [elk]
+2022-07-18 16:50:45,351 p=4142 u=vagrant |  TASK [Extract Prometheus !!!] **************************************************
+2022-07-18 16:50:46,539 p=4142 u=vagrant |   [WARNING]: Consider using the unarchive module rather than running tar.  If
+you need to use command because unarchive is insufficient you can add
+warn=False to this command task or set command_warnings=False in ansible.cfg to
+get rid of this message.
+
+2022-07-18 16:50:46,539 p=4142 u=vagrant |  fatal: [elk]: FAILED! => {"changed": true, "cmd": "tar -xvf /home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz prometheus", "delta": "0:00:00.989264", "end": "2022-07-18 16:50:46.515533", "msg": "non-zero return code", "rc": 2, "start": "2022-07-18 16:50:45.526269", "stderr": "tar: prometheus: Not found in archive\ntar: Exiting with failure status due to previous errors", "stderr_lines": ["tar: prometheus: Not found in archive", "tar: Exiting with failure status due to previous errors"], "stdout": "", "stdout_lines": []}
+2022-07-18 16:50:46,540 p=4142 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:50:46,541 p=4142 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:50:46,541 p=4142 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 16:52:08,090 p=4246 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:52:08,097 p=4246 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:52:09,029 p=4246 u=vagrant |  ok: [elk]
+2022-07-18 16:52:09,036 p=4246 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:52:09,496 p=4246 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:52:09,504 p=4246 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:52:09,511 p=4246 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:52:09,519 p=4246 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:52:09,755 p=4246 u=vagrant |  ok: [elk]
+2022-07-18 16:52:09,763 p=4246 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:52:09,983 p=4246 u=vagrant |  ok: [elk]
+2022-07-18 16:52:09,991 p=4246 u=vagrant |  TASK [Extract Prometheus !!!] **************************************************
+2022-07-18 16:52:10,203 p=4246 u=vagrant |  changed: [elk]
+2022-07-18 16:52:10,204 p=4246 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:52:10,204 p=4246 u=vagrant |  elk                        : ok=5    changed=1    unreachable=0    failed=0   
+2022-07-18 16:52:48,384 p=4348 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:52:48,390 p=4348 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:52:49,005 p=4348 u=vagrant |  ok: [elk]
+2022-07-18 16:52:49,012 p=4348 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:52:49,511 p=4348 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:52:49,519 p=4348 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:52:49,528 p=4348 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:52:49,537 p=4348 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:52:49,764 p=4348 u=vagrant |  ok: [elk]
+2022-07-18 16:52:49,774 p=4348 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:52:49,974 p=4348 u=vagrant |  ok: [elk]
+2022-07-18 16:52:49,983 p=4348 u=vagrant |  TASK [Extract Prometheus !!!] **************************************************
+2022-07-18 16:52:50,193 p=4348 u=vagrant |   [WARNING]: Consider using the file module with state=directory rather than
+running mkdir.  If you need to use command because file is insufficient you can
+add warn=False to this command task or set command_warnings=False in
+ansible.cfg to get rid of this message.
+
+2022-07-18 16:52:50,193 p=4348 u=vagrant |  changed: [elk]
+2022-07-18 16:52:50,194 p=4348 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:52:50,194 p=4348 u=vagrant |  elk                        : ok=5    changed=1    unreachable=0    failed=0   
+2022-07-18 16:55:10,774 p=4455 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 16:55:10,781 p=4455 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 16:55:11,631 p=4455 u=vagrant |  ok: [elk]
+2022-07-18 16:55:11,639 p=4455 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:55:12,064 p=4455 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 16:55:12,076 p=4455 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 16:55:12,084 p=4455 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 16:55:12,092 p=4455 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 16:55:30,184 p=4455 u=vagrant |  changed: [elk]
+2022-07-18 16:55:30,195 p=4455 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 16:55:30,414 p=4455 u=vagrant |  changed: [elk]
+2022-07-18 16:55:30,422 p=4455 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 16:55:30,495 p=4455 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 16:55:30,496 p=4455 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 16:55:30,496 p=4455 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 16:55:30,496 p=4455 u=vagrant |  elk                        : ok=4    changed=2    unreachable=0    failed=1   
+2022-07-18 19:59:05,443 p=4903 u=vagrant |  elk | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: vagrant@192.168.56.120: Permission denied (publickey).\r\n", 
+    "unreachable": true
+}
+2022-07-18 20:01:00,144 p=4938 u=vagrant |  elk | FAILED! => {
+    "changed": false, 
+    "module_stderr": "Shared connection to 192.168.56.120 closed.\r\n", 
+    "module_stdout": "/bin/sh: 1: /usr/bin/python: not found\r\n", 
+    "msg": "MODULE FAILURE", 
+    "rc": 127
+}
+2022-07-18 20:01:01,824 p=4965 u=vagrant |  elk | FAILED! => {
+    "changed": false, 
+    "module_stderr": "Shared connection to 192.168.56.120 closed.\r\n", 
+    "module_stdout": "/bin/sh: 1: /usr/bin/python: not found\r\n", 
+    "msg": "MODULE FAILURE", 
+    "rc": 127
+}
+2022-07-18 20:01:24,818 p=4989 u=vagrant |  elk | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2022-07-18 20:05:18,960 p=5049 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:05:18,968 p=5049 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:05:20,175 p=5049 u=vagrant |  ok: [elk]
+2022-07-18 20:05:20,185 p=5049 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:05:26,244 p=5049 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:05:26,257 p=5049 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:05:26,268 p=5049 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:05:26,281 p=5049 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:05:37,095 p=5049 u=vagrant |  changed: [elk]
+2022-07-18 20:05:37,109 p=5049 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:05:37,365 p=5049 u=vagrant |  changed: [elk]
+2022-07-18 20:05:37,379 p=5049 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:05:37,462 p=5049 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:05:37,463 p=5049 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:05:37,463 p=5049 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:05:37,463 p=5049 u=vagrant |  elk                        : ok=4    changed=2    unreachable=0    failed=1   
+2022-07-18 20:07:10,693 p=5147 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:07:10,702 p=5147 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:07:11,950 p=5147 u=vagrant |  ok: [elk]
+2022-07-18 20:07:11,960 p=5147 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:07:12,512 p=5147 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:07:12,522 p=5147 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:07:12,532 p=5147 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:07:12,543 p=5147 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:07:12,818 p=5147 u=vagrant |  ok: [elk]
+2022-07-18 20:07:12,828 p=5147 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:07:13,094 p=5147 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0644", "msg": "/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz already exists as a file", "owner": "root", "path": "/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz", "size": 83782323, "state": "file", "uid": 0}
+2022-07-18 20:07:13,095 p=5147 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:07:13,096 p=5147 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:07:13,096 p=5147 u=vagrant |  elk                        : ok=3    changed=0    unreachable=0    failed=1   
+2022-07-18 20:07:49,014 p=5228 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:07:49,022 p=5228 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:07:49,767 p=5228 u=vagrant |  ok: [elk]
+2022-07-18 20:07:49,777 p=5228 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:07:50,354 p=5228 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:07:50,365 p=5228 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:07:50,374 p=5228 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:07:50,385 p=5228 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:07:50,676 p=5228 u=vagrant |  ok: [elk]
+2022-07-18 20:07:50,686 p=5228 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:07:50,940 p=5228 u=vagrant |  changed: [elk]
+2022-07-18 20:07:50,950 p=5228 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:07:51,010 p=5228 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:07:51,011 p=5228 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:07:51,011 p=5228 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:07:51,011 p=5228 u=vagrant |  elk                        : ok=4    changed=1    unreachable=0    failed=1   
+2022-07-18 20:08:16,609 p=5313 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:08:16,618 p=5313 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:08:17,488 p=5313 u=vagrant |  ok: [elk]
+2022-07-18 20:08:17,498 p=5313 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:08:18,047 p=5313 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:08:18,058 p=5313 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:08:18,073 p=5313 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:08:18,085 p=5313 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:08:18,377 p=5313 u=vagrant |  ok: [elk]
+2022-07-18 20:08:18,389 p=5313 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:08:18,650 p=5313 u=vagrant |  ok: [elk]
+2022-07-18 20:08:18,662 p=5313 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:08:18,723 p=5313 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:08:18,725 p=5313 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:08:18,725 p=5313 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:08:18,725 p=5313 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:08:37,345 p=5398 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:08:37,354 p=5398 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:08:38,076 p=5398 u=vagrant |  ok: [elk]
+2022-07-18 20:08:38,086 p=5398 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:08:38,660 p=5398 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:08:38,672 p=5398 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:08:38,683 p=5398 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:08:38,694 p=5398 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:08:38,993 p=5398 u=vagrant |  ok: [elk]
+2022-07-18 20:08:39,004 p=5398 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:08:39,269 p=5398 u=vagrant |  ok: [elk]
+2022-07-18 20:08:39,283 p=5398 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:08:39,349 p=5398 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:08:39,351 p=5398 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:08:39,351 p=5398 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:08:39,351 p=5398 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:11:42,955 p=5520 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:11:42,964 p=5520 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:11:44,006 p=5520 u=vagrant |  ok: [elk]
+2022-07-18 20:11:44,017 p=5520 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:11:44,602 p=5520 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:11:44,614 p=5520 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:11:44,623 p=5520 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:11:44,637 p=5520 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:11:44,928 p=5520 u=vagrant |  ok: [elk]
+2022-07-18 20:11:44,940 p=5520 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:11:45,197 p=5520 u=vagrant |  ok: [elk]
+2022-07-18 20:11:45,208 p=5520 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:11:45,273 p=5520 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:11:45,274 p=5520 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:11:45,274 p=5520 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:11:45,275 p=5520 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:13:22,338 p=5616 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:13:22,347 p=5616 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:13:23,415 p=5616 u=vagrant |  ok: [elk]
+2022-07-18 20:13:23,426 p=5616 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:13:23,992 p=5616 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:13:24,003 p=5616 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:13:24,013 p=5616 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:13:24,024 p=5616 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:13:24,279 p=5616 u=vagrant |  ok: [elk]
+2022-07-18 20:13:24,291 p=5616 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:13:37,707 p=5616 u=vagrant |  changed: [elk]
+2022-07-18 20:13:37,720 p=5616 u=vagrant |  TASK [Copy Prometheus /usr/bin] ************************************************
+2022-07-18 20:13:37,777 p=5616 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz/prometheus'
+2022-07-18 20:13:37,778 p=5616 u=vagrant |  failed: [elk] (item=prometheus) => {"changed": false, "item": "prometheus", "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz/prometheus'"}
+2022-07-18 20:13:37,804 p=5616 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz/promtool'
+2022-07-18 20:13:37,804 p=5616 u=vagrant |  failed: [elk] (item=promtool) => {"changed": false, "item": "promtool", "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz/promtool'"}
+2022-07-18 20:13:37,806 p=5616 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:13:37,806 p=5616 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:13:37,806 p=5616 u=vagrant |  elk                        : ok=4    changed=1    unreachable=0    failed=1   
+2022-07-18 20:14:31,223 p=5719 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:14:31,234 p=5719 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:14:31,937 p=5719 u=vagrant |  ok: [elk]
+2022-07-18 20:14:31,948 p=5719 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:14:32,514 p=5719 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:14:32,525 p=5719 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:14:32,537 p=5719 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:14:32,547 p=5719 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:14:32,809 p=5719 u=vagrant |  changed: [elk]
+2022-07-18 20:14:32,820 p=5719 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:14:47,555 p=5719 u=vagrant |  changed: [elk]
+2022-07-18 20:14:47,566 p=5719 u=vagrant |  TASK [Copy Prometheus /usr/bin] ************************************************
+2022-07-18 20:14:47,643 p=5719 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz/prometheus'
+2022-07-18 20:14:47,643 p=5719 u=vagrant |  failed: [elk] (item=prometheus) => {"changed": false, "item": "prometheus", "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz/prometheus'"}
+2022-07-18 20:14:47,671 p=5719 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz/promtool'
+2022-07-18 20:14:47,671 p=5719 u=vagrant |  failed: [elk] (item=promtool) => {"changed": false, "item": "promtool", "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz/promtool'"}
+2022-07-18 20:14:47,673 p=5719 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:14:47,673 p=5719 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:14:47,673 p=5719 u=vagrant |  elk                        : ok=4    changed=2    unreachable=0    failed=1   
+2022-07-18 20:15:41,588 p=5822 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:15:41,597 p=5822 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:15:42,425 p=5822 u=vagrant |  ok: [elk]
+2022-07-18 20:15:42,435 p=5822 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:15:42,988 p=5822 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:15:43,000 p=5822 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:15:43,011 p=5822 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:15:43,022 p=5822 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:15:43,275 p=5822 u=vagrant |  ok: [elk]
+2022-07-18 20:15:43,288 p=5822 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:15:55,215 p=5822 u=vagrant |  ok: [elk]
+2022-07-18 20:15:55,227 p=5822 u=vagrant |  TASK [Copy Prometheus /usr/bin] ************************************************
+2022-07-18 20:15:55,284 p=5822 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64/prometheus'
+2022-07-18 20:15:55,284 p=5822 u=vagrant |  failed: [elk] (item=prometheus) => {"changed": false, "item": "prometheus", "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64/prometheus'"}
+2022-07-18 20:15:55,315 p=5822 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64/promtool'
+2022-07-18 20:15:55,316 p=5822 u=vagrant |  failed: [elk] (item=promtool) => {"changed": false, "item": "promtool", "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64/promtool'"}
+2022-07-18 20:15:55,318 p=5822 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:15:55,318 p=5822 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:15:55,318 p=5822 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:17:53,207 p=5937 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:17:53,216 p=5937 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:17:54,358 p=5937 u=vagrant |  ok: [elk]
+2022-07-18 20:17:54,368 p=5937 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:17:54,938 p=5937 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:17:54,951 p=5937 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:17:54,962 p=5937 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:17:54,974 p=5937 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:17:55,230 p=5937 u=vagrant |  ok: [elk]
+2022-07-18 20:17:55,242 p=5937 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:18:08,315 p=5937 u=vagrant |  ok: [elk]
+2022-07-18 20:18:08,326 p=5937 u=vagrant |  TASK [Copy Prometheus /usr/bin] ************************************************
+2022-07-18 20:18:08,379 p=5937 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64/prometheus'
+2022-07-18 20:18:08,380 p=5937 u=vagrant |  failed: [elk] (item=prometheus) => {"changed": false, "item": "prometheus", "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64/prometheus'"}
+2022-07-18 20:18:08,408 p=5937 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64/promtool'
+2022-07-18 20:18:08,408 p=5937 u=vagrant |  failed: [elk] (item=promtool) => {"changed": false, "item": "promtool", "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64/promtool'"}
+2022-07-18 20:18:08,410 p=5937 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:18:08,410 p=5937 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:18:08,410 p=5937 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:23:33,978 p=6088 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:23:33,986 p=6088 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:23:35,105 p=6088 u=vagrant |  ok: [elk]
+2022-07-18 20:23:35,116 p=6088 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:23:35,684 p=6088 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:23:35,697 p=6088 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:23:35,708 p=6088 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:23:35,722 p=6088 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:23:35,983 p=6088 u=vagrant |  ok: [elk]
+2022-07-18 20:23:35,997 p=6088 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:23:48,098 p=6088 u=vagrant |  ok: [elk]
+2022-07-18 20:23:48,109 p=6088 u=vagrant |  TASK [Copy Prometheus /usr/bin] ************************************************
+2022-07-18 20:23:48,166 p=6088 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64/prometheus'
+2022-07-18 20:23:48,167 p=6088 u=vagrant |  failed: [elk] (item=prometheus) => {"changed": false, "item": "prometheus", "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64/prometheus'"}
+2022-07-18 20:23:48,201 p=6088 u=vagrant |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: AnsibleFileNotFound: Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64/promtool'
+2022-07-18 20:23:48,202 p=6088 u=vagrant |  failed: [elk] (item=promtool) => {"changed": false, "item": "promtool", "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64/promtool'"}
+2022-07-18 20:23:48,204 p=6088 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:23:48,204 p=6088 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:23:48,204 p=6088 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:24:09,660 p=6188 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:24:09,667 p=6188 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:24:10,409 p=6188 u=vagrant |  ok: [elk]
+2022-07-18 20:24:10,419 p=6188 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:24:10,957 p=6188 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:24:10,968 p=6188 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:24:10,978 p=6188 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:24:10,989 p=6188 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:24:20,024 p=6188 u=vagrant |  changed: [elk]
+2022-07-18 20:24:20,037 p=6188 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:24:20,296 p=6188 u=vagrant |  ok: [elk]
+2022-07-18 20:24:20,311 p=6188 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:24:20,394 p=6188 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:24:20,395 p=6188 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:24:20,396 p=6188 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:24:20,396 p=6188 u=vagrant |  elk                        : ok=4    changed=1    unreachable=0    failed=1   
+2022-07-18 20:25:15,245 p=6282 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:25:15,253 p=6282 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:25:15,911 p=6282 u=vagrant |  ok: [elk]
+2022-07-18 20:25:15,921 p=6282 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:25:16,482 p=6282 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:25:16,493 p=6282 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:25:16,504 p=6282 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:25:16,515 p=6282 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:25:16,811 p=6282 u=vagrant |  ok: [elk]
+2022-07-18 20:25:16,822 p=6282 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:25:17,079 p=6282 u=vagrant |  changed: [elk]
+2022-07-18 20:25:17,090 p=6282 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:25:17,157 p=6282 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:25:17,158 p=6282 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:25:17,159 p=6282 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:25:17,159 p=6282 u=vagrant |  elk                        : ok=4    changed=1    unreachable=0    failed=1   
+2022-07-18 20:25:58,593 p=6369 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:25:58,601 p=6369 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:25:59,343 p=6369 u=vagrant |  ok: [elk]
+2022-07-18 20:25:59,354 p=6369 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:25:59,923 p=6369 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:25:59,933 p=6369 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:25:59,944 p=6369 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:25:59,955 p=6369 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:26:00,248 p=6369 u=vagrant |  ok: [elk]
+2022-07-18 20:26:00,261 p=6369 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:26:00,516 p=6369 u=vagrant |  ok: [elk]
+2022-07-18 20:26:00,526 p=6369 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:26:00,590 p=6369 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:26:00,592 p=6369 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:26:00,592 p=6369 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:26:00,593 p=6369 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:28:07,236 p=6464 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:28:07,244 p=6464 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:28:08,161 p=6464 u=vagrant |  ok: [elk]
+2022-07-18 20:28:08,171 p=6464 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:28:08,729 p=6464 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:28:08,741 p=6464 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:28:08,818 p=6464 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:28:08,828 p=6464 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:28:09,109 p=6464 u=vagrant |  ok: [elk]
+2022-07-18 20:28:09,119 p=6464 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:28:09,368 p=6464 u=vagrant |  ok: [elk]
+2022-07-18 20:28:09,379 p=6464 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:28:09,440 p=6464 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:28:09,442 p=6464 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:28:09,442 p=6464 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:28:09,442 p=6464 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:28:16,590 p=6552 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:28:16,598 p=6552 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:28:17,309 p=6552 u=vagrant |  ok: [elk]
+2022-07-18 20:28:17,320 p=6552 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:28:17,885 p=6552 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:28:17,896 p=6552 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:28:17,906 p=6552 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:28:17,917 p=6552 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:28:18,195 p=6552 u=vagrant |  ok: [elk]
+2022-07-18 20:28:18,206 p=6552 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:28:18,460 p=6552 u=vagrant |  ok: [elk]
+2022-07-18 20:28:18,471 p=6552 u=vagrant |  TASK [Extract Prometheus] ******************************************************
+2022-07-18 20:28:18,538 p=6552 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:28:18,539 p=6552 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:28:18,539 p=6552 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:28:18,540 p=6552 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:29:49,677 p=6671 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:29:49,684 p=6671 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:29:50,820 p=6671 u=vagrant |  ok: [elk]
+2022-07-18 20:29:50,830 p=6671 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:29:51,376 p=6671 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:29:51,387 p=6671 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:29:51,398 p=6671 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:29:51,412 p=6671 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:29:51,700 p=6671 u=vagrant |  ok: [elk]
+2022-07-18 20:29:51,711 p=6671 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:29:51,968 p=6671 u=vagrant |  ok: [elk]
+2022-07-18 20:29:51,979 p=6671 u=vagrant |  TASK [Extract Prometheus !!!] **************************************************
+2022-07-18 20:29:52,044 p=6671 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:29:52,045 p=6671 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:29:52,045 p=6671 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:29:52,046 p=6671 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:30:08,319 p=6759 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:30:08,327 p=6759 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:30:08,995 p=6759 u=vagrant |  ok: [elk]
+2022-07-18 20:30:09,005 p=6759 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:30:09,567 p=6759 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:30:09,578 p=6759 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:30:09,588 p=6759 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:30:09,602 p=6759 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:30:09,880 p=6759 u=vagrant |  ok: [elk]
+2022-07-18 20:30:09,890 p=6759 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:30:10,143 p=6759 u=vagrant |  ok: [elk]
+2022-07-18 20:30:10,154 p=6759 u=vagrant |  TASK [Extract Prometheus !!!] **************************************************
+2022-07-18 20:30:10,220 p=6759 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:30:10,221 p=6759 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:30:10,221 p=6759 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:30:10,222 p=6759 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:32:00,225 p=6859 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:32:00,233 p=6859 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:32:01,397 p=6859 u=vagrant |  ok: [elk]
+2022-07-18 20:32:01,410 p=6859 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:32:02,004 p=6859 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:32:02,017 p=6859 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:32:02,029 p=6859 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:32:02,043 p=6859 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:32:02,356 p=6859 u=vagrant |  ok: [elk]
+2022-07-18 20:32:02,368 p=6859 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:32:02,626 p=6859 u=vagrant |  ok: [elk]
+2022-07-18 20:32:02,637 p=6859 u=vagrant |  TASK [Extract Prometheus !!!] **************************************************
+2022-07-18 20:32:02,701 p=6859 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:32:02,702 p=6859 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:32:02,702 p=6859 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:32:02,702 p=6859 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:32:28,061 p=6949 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:32:28,071 p=6949 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:32:28,881 p=6949 u=vagrant |  ok: [elk]
+2022-07-18 20:32:28,892 p=6949 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:32:29,531 p=6949 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:32:29,542 p=6949 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:32:29,556 p=6949 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:32:29,567 p=6949 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:32:29,855 p=6949 u=vagrant |  ok: [elk]
+2022-07-18 20:32:29,867 p=6949 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:32:30,117 p=6949 u=vagrant |  ok: [elk]
+2022-07-18 20:32:30,128 p=6949 u=vagrant |  TASK [Extract Prometheus !!!] **************************************************
+2022-07-18 20:32:30,193 p=6949 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:32:30,194 p=6949 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:32:30,194 p=6949 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:32:30,195 p=6949 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:33:32,605 p=7038 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:33:32,613 p=7038 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:33:33,720 p=7038 u=vagrant |  ok: [elk]
+2022-07-18 20:33:33,731 p=7038 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:33:34,311 p=7038 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:33:34,323 p=7038 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:33:34,338 p=7038 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:33:34,350 p=7038 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:33:45,616 p=7038 u=vagrant |  changed: [elk]
+2022-07-18 20:33:45,628 p=7038 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:33:45,887 p=7038 u=vagrant |  ok: [elk]
+2022-07-18 20:33:45,898 p=7038 u=vagrant |  TASK [Extract Prometheus !!!] **************************************************
+2022-07-18 20:33:45,955 p=7038 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:33:45,956 p=7038 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:33:45,957 p=7038 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:33:45,957 p=7038 u=vagrant |  elk                        : ok=4    changed=1    unreachable=0    failed=1   
+2022-07-18 20:35:05,101 p=7146 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:35:05,109 p=7146 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:35:06,428 p=7146 u=vagrant |  ok: [elk]
+2022-07-18 20:35:06,442 p=7146 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:35:07,020 p=7146 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:35:07,032 p=7146 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:35:07,043 p=7146 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:35:07,056 p=7146 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:35:07,343 p=7146 u=vagrant |  ok: [elk]
+2022-07-18 20:35:07,354 p=7146 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:35:07,636 p=7146 u=vagrant |  ok: [elk]
+2022-07-18 20:35:07,648 p=7146 u=vagrant |  TASK [Extract Prometheus !!!] **************************************************
+2022-07-18 20:35:07,710 p=7146 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:35:07,711 p=7146 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:35:07,712 p=7146 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:35:07,712 p=7146 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:38:40,725 p=7260 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:38:40,733 p=7260 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:38:41,836 p=7260 u=vagrant |  ok: [elk]
+2022-07-18 20:38:41,848 p=7260 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:38:42,406 p=7260 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:38:42,419 p=7260 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:38:42,430 p=7260 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:38:42,443 p=7260 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:38:42,734 p=7260 u=vagrant |  ok: [elk]
+2022-07-18 20:38:42,747 p=7260 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:38:42,998 p=7260 u=vagrant |  ok: [elk]
+2022-07-18 20:38:43,009 p=7260 u=vagrant |  TASK [Extract Prometheus !!!] **************************************************
+2022-07-18 20:38:43,078 p=7260 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:38:43,079 p=7260 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:38:43,079 p=7260 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:38:43,080 p=7260 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
+2022-07-18 20:41:30,047 p=7402 u=vagrant |  PLAY [Provision a server] ******************************************************
+2022-07-18 20:41:30,055 p=7402 u=vagrant |  TASK [Gathering Facts] *********************************************************
+2022-07-18 20:41:31,130 p=7402 u=vagrant |  ok: [elk]
+2022-07-18 20:41:31,140 p=7402 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:41:31,679 p=7402 u=vagrant |  ok: [elk] => (item=tar)
+2022-07-18 20:41:31,690 p=7402 u=vagrant |  TASK [Install tar] *************************************************************
+2022-07-18 20:41:31,704 p=7402 u=vagrant |  skipping: [elk] => (item=tar) 
+2022-07-18 20:41:31,715 p=7402 u=vagrant |  TASK [wget Prometheus 2.37] ****************************************************
+2022-07-18 20:41:31,994 p=7402 u=vagrant |  ok: [elk]
+2022-07-18 20:41:32,005 p=7402 u=vagrant |  TASK [Dir for user data] *******************************************************
+2022-07-18 20:41:32,264 p=7402 u=vagrant |  ok: [elk]
+2022-07-18 20:41:32,275 p=7402 u=vagrant |  TASK [Extract Prometheus !!!] **************************************************
+2022-07-18 20:41:32,338 p=7402 u=vagrant |  fatal: [elk]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/vagrant/prometheus-2.37.0.linux-amd64.tar.gz'"}
+2022-07-18 20:41:32,340 p=7402 u=vagrant |  	to retry, use: --limit @/vagrant/ansible_elk/install_prometheus_2.37.retry
+
+2022-07-18 20:41:32,340 p=7402 u=vagrant |  PLAY RECAP *********************************************************************
+2022-07-18 20:41:32,340 p=7402 u=vagrant |  elk                        : ok=4    changed=0    unreachable=0    failed=1   
