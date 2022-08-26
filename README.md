@@ -7,13 +7,13 @@
 Автоматизация Компиляции из исходного кода, тестирования, развертывания артефакта на тестовый стенд, после финальной проверки SonarQube установка в прод.
 
 ## Виртуальные машины:
-- jenkins (Jenkins, Ansible, Prometheus, Grafana)
-- elk_stack (Elasticsearch, Logstash, Kibana, Node_Exporter (мониторинг), Filebeat(логироваине)
-- nexus
-- sonarqube
-- backend
-- ctfrontend
-- cpfrontend
+- jenkins (Jenkins, Ansible, Prometheus, Grafana, Node_Exporter, Filebeat)
+- elk_stack (Elasticsearch, Logstash, Kibana, Node_Exporter, Filebeat)
+- nexus (Nexus, Node_Exporter, Filebeat)
+- sonarqube (sonarqube, Node_Exporter, Filebeat)
+- backend (MariaDB, memcached, rabbitmq, Node_Exporter, Filebeat)
+- ctfrontend (Tomcat, Node_Exporter, Filebeat)
+- cpfrontend (Tomcat, Node_Exporter, Filebeat)
 
 Весь Provision `./userdata/`
 
