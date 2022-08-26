@@ -2,6 +2,7 @@
 Реализация ci/cd конвейера, Инстументы: Jenkins + Nexus + SonarQube + Ansible + Vault.
 
 Добавлен node_exporter на все VM, автоматическое развертывание через Ansible-playbook `./ansible/nodeExporter.yml`, сбор метрик в Prometheus `./userdata/prometheus.yml`
+
 Добавлен (в процессе) установщик ELK + раскатка Filebeat по всем хостам
 
 Автоматизация Компиляции из исходного кода, тестирования, развертывания артефакта на тестовый стенд, после финальной проверки SonarQube установка в прод.
